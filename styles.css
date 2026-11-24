@@ -17,3 +17,9 @@ pre{background:#f4f3ee;border:1px solid var(--line);padding:12px 16px;overflow:a
 footer{padding:26px 0 0;color:var(--muted);font-size:12px;border-top:1px solid var(--line);margin-top:30px}
 .en{display:none}body.lang-en .zh{display:none}body.lang-en .en{display:inline}
 @media(max-width:820px){#q{width:140px}.tbcount{display:none}.cols{grid-template-columns:1fr}}
+
+/* CAP-PERFORMANCE-LAYOUT */
+.performance-details{margin:14px 0 26px}.performance-details>summary{cursor:pointer;padding:12px 14px;border:1px solid var(--line);background:var(--panel);font-weight:600;color:var(--accent-ink)}.performance-details>summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}.table-scroll{overflow-x:auto}#tb{min-width:1100px}.cap-badge{display:inline-block;white-space:nowrap;font:11px var(--mono);padding:3px 6px;border:1px solid #a2cbb6;border-radius:3px;background:#e8f4ed;color:#175d3a}.legacy-label,.unit{white-space:nowrap;color:var(--muted)}.v-neutral{color:var(--muted)}
+
+/* CAP-PERFORMANCE-WIDE */
+@media(min-width:1200px){.wrap{max-width:1400px}}td.alg{white-space:nowrap}

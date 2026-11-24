@@ -1,0 +1,579 @@
+{
+  "schema_version": 1,
+  "instance": "Iphe-512",
+  "id": "hash-12",
+  "generation_label": "REF+KAT-only",
+  "generation_basis": "Reference implementation, KAT and own feedback; OPT withheld during generation according to CAP source audit. Known corpus; unseen pretraining is not established.",
+  "harness": "DSH-headless",
+  "model": "deepseek-v4.1-flash",
+  "cap_task": "iphe512-dsh-effort-low-fresh-v1",
+  "cap_candidate": "candidate_10",
+  "source_sha256": "1993e0ac81de0ae31c44afd67408185518a5a401c1e58eaf7f39484210dba4ab",
+  "archive_sha256": "4ff7dfa7ffce7df15bffbf46dc2e1b290b098eb33fd22400aa99c2a23b362913",
+  "prior_website_binary_sha256": "0acaea1a216fba3d46e8768d2bdab70020752433dd3dc709a48f623f96a0b867",
+  "legacy_before_cap": {
+    "ref": "27.44",
+    "opt": "7.00",
+    "our": "6.68",
+    "s4": "1.05",
+    "gm": "1.05",
+    "sha": "0acaea1a216fba3d",
+    "zip": "instances/Iphe-512.zip",
+    "mb": 1.58
+  },
+  "metric_basis": "TSC ticks/B; not hardware core cycles",
+  "hardware_core_cpb": null,
+  "publication": {
+    "instance": "Iphe-512",
+    "id": "hash-12",
+    "measurement_basis": "TSC ticks/B (not core cycles)",
+    "reference_build": "O2; measured after primary comparisons",
+    "flags": [
+      "-O3",
+      "-march=x86-64",
+      "-mavx2",
+      "-mtune=native",
+      "-flto",
+      "-fomit-frame-pointer",
+      "-std=c99",
+      "-Wpedantic",
+      "-Wall",
+      "-Wextra"
+    ],
+    "samples_per_size": 101,
+    "repetitions": 3,
+    "sizes_bytes": [
+      32,
+      128,
+      512,
+      1024,
+      4096,
+      8192,
+      16384,
+      65536
+    ],
+    "reference_tsc_per_byte_1024": 56.67654272904097,
+    "opt_tsc_per_byte_1024": 7.116731571285646,
+    "cap_tsc_per_byte_1024": 4.136677073173403,
+    "gm8_opt_over_cap": 1.9348552021948877,
+    "primary_opt_over_cap_geomean": 1.7204036102312117,
+    "primary_site_over_cap_geomean": 1.6012531107515426,
+    "site_vs_cap_paired_1024": {
+      "speedup_median": 1.603411765,
+      "bootstrap_median_ci95": [
+        1.593723427,
+        1.608444022
+      ],
+      "baseline_ns_median": 2793.619140623,
+      "candidate_ns_median": 1739.673828124,
+      "rounds": 101
+    },
+    "site_aa_1024": {
+      "speedup_median": 1.001562293,
+      "bootstrap_median_ci95": [
+        0.996028153,
+        1.007438549
+      ],
+      "baseline_ns_median": 2771.431640625,
+      "candidate_ns_median": 2777.906249999,
+      "rounds": 101
+    },
+    "hardware_core_cpb": null,
+    "cap_task": "iphe512-dsh-effort-low-fresh-v1",
+    "cap_candidate": "candidate_10",
+    "cap_source_sha256": "1993e0ac81de0ae31c44afd67408185518a5a401c1e58eaf7f39484210dba4ab",
+    "cap_audit_sha256": "d5f802b14294c8eeaf2d951f0127da19234345d3b132013741f8a60524019d7b",
+    "cap_model": "deepseek-v4.1-flash",
+    "cap_harness": "DSH-headless",
+    "generation_label": "REF+KAT-only",
+    "source_audit_sha256": "438ac59ea8e3c4d2b3c783bb486cc7ec570b2cc69a4a6f2ee384ccbbe5fb79d2",
+    "exposure": "registered ref+KAT-only replay; known corpus, no unseen-algorithm claim",
+    "baseline": "website-rebuilt source and locally recovered generated assembly; published binary differs in hash but matches 8329 API cases and archive KAT",
+    "limits": [
+      "Historical website cpB is not assumed to be hardware core cycles.",
+      "Reference O2 measured after the primary comparison.",
+      "No formal constant-time or cryptographic security proof."
+    ],
+    "zip_sha256": "4ff7dfa7ffce7df15bffbf46dc2e1b290b098eb33fd22400aa99c2a23b362913",
+    "zip_bytes": 1835399
+  },
+  "benchmark": {
+    "status": "completed",
+    "instance": "Iphe-512",
+    "policy_sha256": "f880ee3e604a6aa7e072b51fd7eb595c6ac5479ee555b6bbb505f358839a244a",
+    "pilot_sha256": "4c6949c64a3567a337b8a12fb8a5637176a8d26e37d10cd92ab7971862eeef42",
+    "validation_sha256": "b1374d3d940768cfe23c3ef5b13528ce519062943f2ccb4218d2d947d64171e3",
+    "kat_sha256": "b92306676b97ffd850c07abccbb0fcd123c46ce8e6ca583ab07ff82e301ea3a2",
+    "guide_profile_sha256": "5e1f264ab5e6b3bc2bd08a40010e87fe59471da711e9b79c6f6724a5dafa6899",
+    "gcc": "gcc (Debian 14.2.0-19) 14.2.0",
+    "kernel": "6.18.58.1-microsoft-standard-WSL2",
+    "cpu_affinity": [
+      0
+    ],
+    "repetitions": [
+      {
+        "repeat": 1,
+        "order": [
+          "reference",
+          "site",
+          "cap",
+          "opt"
+        ],
+        "scores": [
+          {
+            "bytes": 32,
+            "site_over_cap": 3.9136489250261115,
+            "opt_over_cap": 4.252297824691216,
+            "ref_over_cap": 9.008972992043963,
+            "cap_tsc_ticks_per_byte": 22.33778283147525,
+            "site_tsc_ticks_per_byte": 87.42216249975897,
+            "opt_tsc_ticks_per_byte": 94.98710481247184,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 128,
+            "site_over_cap": 4.364331894138966,
+            "opt_over_cap": 4.720564575757849,
+            "ref_over_cap": 9.581906490357934,
+            "cap_tsc_ticks_per_byte": 5.580173048642481,
+            "site_tsc_ticks_per_byte": 24.353589577250464,
+            "opt_tsc_ticks_per_byte": 26.341589672730663,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 512,
+            "site_over_cap": 2.160743680602506,
+            "opt_over_cap": 2.3050284391280473,
+            "ref_over_cap": 7.389333274480816,
+            "cap_tsc_ticks_per_byte": 4.227722588152035,
+            "site_tsc_ticks_per_byte": 9.134945132944887,
+            "opt_tsc_ticks_per_byte": 9.74505943827102,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 1024,
+            "site_over_cap": 1.5781443905362802,
+            "opt_over_cap": 1.7180161018431728,
+            "ref_over_cap": 6.86001196096617,
+            "cap_tsc_ticks_per_byte": 4.2165943514002455,
+            "site_tsc_ticks_per_byte": 6.654396179879109,
+            "opt_tsc_ticks_per_byte": 7.244205871430944,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 4096,
+            "site_over_cap": 1.1669501238127953,
+            "opt_over_cap": 1.3101789035298097,
+            "ref_over_cap": 6.450331578582145,
+            "cap_tsc_ticks_per_byte": 4.049733355493829,
+            "site_tsc_ticks_per_byte": 4.725847659724773,
+            "opt_tsc_ticks_per_byte": 5.305922461028146,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 8192,
+            "site_over_cap": 1.1238688125222875,
+            "opt_over_cap": 1.2515024442849767,
+            "ref_over_cap": 6.428870418979657,
+            "cap_tsc_ticks_per_byte": 3.933760170889373,
+            "site_tsc_ticks_per_byte": 4.420997789590666,
+            "opt_tsc_ticks_per_byte": 4.923089924425182,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 16384,
+            "site_over_cap": 1.0808694760967568,
+            "opt_over_cap": 1.197894179604245,
+            "ref_over_cap": 6.401582260186331,
+            "cap_tsc_ticks_per_byte": 3.9570049814658588,
+            "site_tsc_ticks_per_byte": 4.276894144492574,
+            "opt_tsc_ticks_per_byte": 4.740058105770904,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 65536,
+            "site_over_cap": 1.0522482067998469,
+            "opt_over_cap": 1.1727717454302025,
+            "ref_over_cap": 6.315013120030519,
+            "cap_tsc_ticks_per_byte": 3.9510585435546273,
+            "site_tsc_ticks_per_byte": 4.157474428120226,
+            "opt_tsc_ticks_per_byte": 4.633663767635232,
+            "hardware_core_cpb": null
+          }
+        ],
+        "gm8_site_over_cap": 1.7472844940346863,
+        "gm8_opt_over_cap": 1.9179594615154008,
+        "cycles_available": false
+      },
+      {
+        "repeat": 2,
+        "order": [
+          "opt",
+          "cap",
+          "site",
+          "reference"
+        ],
+        "scores": [
+          {
+            "bytes": 32,
+            "site_over_cap": 4.05770552066984,
+            "opt_over_cap": 4.409950417566267,
+            "ref_over_cap": 9.447960995785404,
+            "cap_tsc_ticks_per_byte": 21.474665575689357,
+            "site_tsc_ticks_per_byte": 87.13815458694337,
+            "opt_tsc_ticks_per_byte": 94.70329586822122,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 128,
+            "site_over_cap": 4.509192251520733,
+            "opt_over_cap": 4.702921697141031,
+            "ref_over_cap": 9.995966585458412,
+            "cap_tsc_ticks_per_byte": 5.393747594097076,
+            "site_tsc_ticks_per_byte": 24.32138103069632,
+            "opt_tsc_ticks_per_byte": 25.366502478571395,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 512,
+            "site_over_cap": 2.2247355578104284,
+            "opt_over_cap": 2.3828295670614024,
+            "ref_over_cap": 7.825662361867293,
+            "cap_tsc_ticks_per_byte": 4.0830332123407524,
+            "site_tsc_ticks_per_byte": 9.083687423479386,
+            "opt_tsc_ticks_per_byte": 9.729402504345085,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 1024,
+            "site_over_cap": 1.6152044668824417,
+            "opt_over_cap": 1.7258767935240997,
+            "ref_over_cap": 7.156188758267144,
+            "cap_tsc_ticks_per_byte": 4.09899658731894,
+            "site_tsc_ticks_per_byte": 6.6207574145628865,
+            "opt_tsc_ticks_per_byte": 7.074458273330581,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 4096,
+            "site_over_cap": 1.1981250923693798,
+            "opt_over_cap": 1.34324364503685,
+            "ref_over_cap": 6.76208886098021,
+            "cap_tsc_ticks_per_byte": 3.9266528799982354,
+            "site_tsc_ticks_per_byte": 4.7046762787469545,
+            "opt_tsc_ticks_per_byte": 5.274550891158604,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 8192,
+            "site_over_cap": 1.1512551569550733,
+            "opt_over_cap": 1.273001186101231,
+            "ref_over_cap": 6.720394722554086,
+            "cap_tsc_ticks_per_byte": 3.8339041011168224,
+            "site_tsc_ticks_per_byte": 4.413793162544175,
+            "opt_tsc_ticks_per_byte": 4.880689819260399,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 16384,
+            "site_over_cap": 1.1056546335010837,
+            "opt_over_cap": 1.2575993273895878,
+            "ref_over_cap": 6.700508766823656,
+            "cap_tsc_ticks_per_byte": 3.8434335925791525,
+            "site_tsc_ticks_per_byte": 4.249506539637499,
+            "opt_tsc_ticks_per_byte": 4.833610855706848,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 65536,
+            "site_over_cap": 1.076328404966603,
+            "opt_over_cap": 1.1944238910576728,
+            "ref_over_cap": 6.613468521737008,
+            "cap_tsc_ticks_per_byte": 3.819130326261615,
+            "site_tsc_ticks_per_byte": 4.110629525515113,
+            "opt_tsc_ticks_per_byte": 4.5617449543263655,
+            "hardware_core_cpb": null
+          }
+        ],
+        "gm8_site_over_cap": 1.7953139405005705,
+        "gm8_opt_over_cap": 1.9614334418381925,
+        "cycles_available": false
+      },
+      {
+        "repeat": 3,
+        "order": [
+          "site",
+          "opt",
+          "reference",
+          "cap"
+        ],
+        "scores": [
+          {
+            "bytes": 32,
+            "site_over_cap": 4.05452519850841,
+            "opt_over_cap": 4.35597233139198,
+            "ref_over_cap": 9.408535552303189,
+            "cap_tsc_ticks_per_byte": 21.454351066362314,
+            "site_tsc_ticks_per_byte": 86.98754686412283,
+            "opt_tsc_ticks_per_byte": 93.45455645570544,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 128,
+            "site_over_cap": 4.492846155401495,
+            "opt_over_cap": 4.63960415390832,
+            "ref_over_cap": 9.979202683916675,
+            "cap_tsc_ticks_per_byte": 5.401851654053063,
+            "site_tsc_ticks_per_byte": 24.269691693900835,
+            "opt_tsc_ticks_per_byte": 25.0624575095601,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 512,
+            "site_over_cap": 2.1986152042321296,
+            "opt_over_cap": 2.3282922904252565,
+            "ref_over_cap": 7.730446067024696,
+            "cap_tsc_ticks_per_byte": 4.091897544294226,
+            "site_tsc_ticks_per_byte": 8.996632717623626,
+            "opt_tsc_ticks_per_byte": 9.527269457826579,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 1024,
+            "site_over_cap": 1.6106668354678062,
+            "opt_over_cap": 1.7173310281393752,
+            "ref_over_cap": 7.13747563601025,
+            "cap_tsc_ticks_per_byte": 4.094440280801023,
+            "site_tsc_ticks_per_byte": 6.594813271324209,
+            "opt_tsc_ticks_per_byte": 7.031530569095413,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 4096,
+            "site_over_cap": 1.1871700424308447,
+            "opt_over_cap": 1.3122392054452234,
+            "ref_over_cap": 6.728113748257932,
+            "cap_tsc_ticks_per_byte": 3.925504415342123,
+            "site_tsc_ticks_per_byte": 4.660294022890601,
+            "opt_tsc_ticks_per_byte": 5.151251500195796,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 8192,
+            "site_over_cap": 1.1259193052908711,
+            "opt_over_cap": 1.2442877045877017,
+            "ref_over_cap": 6.699457822225546,
+            "cap_tsc_ticks_per_byte": 3.842452053976531,
+            "site_tsc_ticks_per_byte": 4.326292883051504,
+            "opt_tsc_ticks_per_byte": 4.781258885223086,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 16384,
+            "site_over_cap": 1.097707923362724,
+            "opt_over_cap": 1.2124562400231131,
+            "ref_over_cap": 6.641431339011192,
+            "cap_tsc_ticks_per_byte": 3.8349960959783873,
+            "site_tsc_ticks_per_byte": 4.209701811913217,
+            "opt_tsc_ticks_per_byte": 4.649823349301178,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 65536,
+            "site_over_cap": 1.0699511264021395,
+            "opt_over_cap": 1.1808692802295406,
+            "ref_over_cap": 6.614668879059131,
+            "cap_tsc_ticks_per_byte": 3.8232802589340964,
+            "site_tsc_ticks_per_byte": 4.0904863329216985,
+            "opt_tsc_ticks_per_byte": 4.514598903089467,
+            "hardware_core_cpb": null
+          }
+        ],
+        "gm8_site_over_cap": 1.781090259644617,
+        "gm8_opt_over_cap": 1.925450726718692,
+        "cycles_available": false
+      }
+    ],
+    "primary_site_over_cap_geomean": 1.6012531107515426,
+    "primary_opt_over_cap_geomean": 1.7204036102312117,
+    "primary_rule_passed": true,
+    "other_sizes_rule_passed": true,
+    "replacement_eligible": true,
+    "limits": [
+      "TSC ticks are not hardware core cycles.",
+      "Website rebuilt binary differs in hash from published binary; 8329 API tests and four KATs passed.",
+      "This is site-comparison evidence, not a new independent blind CAP experiment."
+    ]
+  },
+  "paired_diagnostic": {
+    "site_aa": {
+      "32": {
+        "speedup_median": 1.000377648,
+        "bootstrap_median_ci95": [
+          0.99631367,
+          1.003425246
+        ],
+        "baseline_ns_median": 1181.51953125,
+        "candidate_ns_median": 1179.25390625,
+        "rounds": 101
+      },
+      "128": {
+        "speedup_median": 0.998317806,
+        "bootstrap_median_ci95": [
+          0.995391857,
+          1.000767528
+        ],
+        "baseline_ns_median": 1299.23828125,
+        "candidate_ns_median": 1298.049804687,
+        "rounds": 101
+      },
+      "512": {
+        "speedup_median": 1.001215645,
+        "bootstrap_median_ci95": [
+          0.996528896,
+          1.005611277
+        ],
+        "baseline_ns_median": 1925.168945312,
+        "candidate_ns_median": 1937.278320313,
+        "rounds": 101
+      },
+      "1024": {
+        "speedup_median": 1.001562293,
+        "bootstrap_median_ci95": [
+          0.996028153,
+          1.007438549
+        ],
+        "baseline_ns_median": 2771.431640625,
+        "candidate_ns_median": 2777.906249999,
+        "rounds": 101
+      },
+      "4096": {
+        "speedup_median": 1.00038576,
+        "bootstrap_median_ci95": [
+          0.998224354,
+          1.004711258
+        ],
+        "baseline_ns_median": 8062.664062499,
+        "candidate_ns_median": 8046.578125,
+        "rounds": 101
+      },
+      "8192": {
+        "speedup_median": 1.000703688,
+        "bootstrap_median_ci95": [
+          0.996992671,
+          1.004465012
+        ],
+        "baseline_ns_median": 14996.453125003,
+        "candidate_ns_median": 14978.765625,
+        "rounds": 101
+      },
+      "16384": {
+        "speedup_median": 0.999720556,
+        "bootstrap_median_ci95": [
+          0.996877728,
+          1.003212284
+        ],
+        "baseline_ns_median": 28758.67187499,
+        "candidate_ns_median": 28692.718749987,
+        "rounds": 101
+      },
+      "65536": {
+        "speedup_median": 1.004252327,
+        "bootstrap_median_ci95": [
+          1.001008712,
+          1.006268604
+        ],
+        "baseline_ns_median": 112323.125000036,
+        "candidate_ns_median": 111682.062500007,
+        "rounds": 101
+      }
+    },
+    "site_over_cap": {
+      "32": {
+        "speedup_median": 4.097625265,
+        "bootstrap_median_ci95": [
+          4.075630499,
+          4.104447469
+        ],
+        "baseline_ns_median": 1180.454101563,
+        "candidate_ns_median": 292.780273437,
+        "rounds": 101
+      },
+      "128": {
+        "speedup_median": 4.476292172,
+        "bootstrap_median_ci95": [
+          4.406075823,
+          4.520882451
+        ],
+        "baseline_ns_median": 1299.521484375,
+        "candidate_ns_median": 292.720703125,
+        "rounds": 101
+      },
+      "512": {
+        "speedup_median": 2.209065624,
+        "bootstrap_median_ci95": [
+          2.204045088,
+          2.223003262
+        ],
+        "baseline_ns_median": 1925.376953125,
+        "candidate_ns_median": 870.0859375,
+        "rounds": 101
+      },
+      "1024": {
+        "speedup_median": 1.603411765,
+        "bootstrap_median_ci95": [
+          1.593723427,
+          1.608444022
+        ],
+        "baseline_ns_median": 2793.619140623,
+        "candidate_ns_median": 1739.673828124,
+        "rounds": 101
+      },
+      "4096": {
+        "speedup_median": 1.200420515,
+        "bootstrap_median_ci95": [
+          1.194349094,
+          1.208748659
+        ],
+        "baseline_ns_median": 8050.687499997,
+        "candidate_ns_median": 6690.250000004,
+        "rounds": 101
+      },
+      "8192": {
+        "speedup_median": 1.145805369,
+        "bootstrap_median_ci95": [
+          1.141614126,
+          1.15009064
+        ],
+        "baseline_ns_median": 14977.656249998,
+        "candidate_ns_median": 13085.234375002,
+        "rounds": 101
+      },
+      "16384": {
+        "speedup_median": 1.100148216,
+        "bootstrap_median_ci95": [
+          1.09652523,
+          1.10462377
+        ],
+        "baseline_ns_median": 28667.781249991,
+        "candidate_ns_median": 26032.937499976,
+        "rounds": 101
+      },
+      "65536": {
+        "speedup_median": 1.076333032,
+        "bootstrap_median_ci95": [
+          1.074137858,
+          1.080623646
+        ],
+        "baseline_ns_median": 111860.937499986,
+        "candidate_ns_median": 103653.187499941,
+        "rounds": 101
+      }
+    }
+  },
+  "limits": [
+    "Formal cryptographic security and constant-time behavior not proven.",
+    "Website baseline was rebuilt from recovered source and assembly and checked against the published binary; binary hashes differ.",
+    "Reference O2 measured after the main comparison."
+  ]
+}
