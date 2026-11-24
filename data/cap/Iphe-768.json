@@ -1,0 +1,280 @@
+{
+  "instance": "Iphe-768",
+  "id": "hash-12",
+  "generation_label": "REF+KAT-only",
+  "lineage": "fresh",
+  "archive_sha256": "647db0bbfb90dcde161bff9806c1d928f974ad5c20db5c168e7eb9bf25682306",
+  "source_audit_sha256": "b2940faaca99e2c34314cbef18f270a5b0523885c872ef185a8c828c1a7b9198",
+  "metric_basis": "TSC ticks/B; not hardware core cycles",
+  "hardware_core_cpb": null,
+  "performance": {
+    "instance": "Iphe-768",
+    "algorithm": "Iphe",
+    "id": "hash-12",
+    "digest_bits": 768,
+    "task": "iphe768-dsh-gate2-structural-v1",
+    "selected": "candidate_15",
+    "model": "hy4flash",
+    "harness": "DSH-headless",
+    "lineage": "fresh",
+    "source_audit_sha256": "b2940faaca99e2c34314cbef18f270a5b0523885c872ef185a8c828c1a7b9198",
+    "audit_sha256": "0b6c5cf3690353807abddfefa357a704023181a048a4b95b9d18239b149c9851",
+    "guide_profile_sha256": "5e1f264ab5e6b3bc2bd08a40010e87fe59471da711e9b79c6f6724a5dafa6899",
+    "source_hashes": {
+      "CryptHash_AlgorithmInstance.c": "c6f4d1ba46f5b304c1eef55e78b08b313ddcd82145f225070670fd0763dd25db"
+    },
+    "header_hashes": {
+      "CryptHash_AlgorithmInstance.h": "9daacbb3aca1e0773e0ad2cfad100429105d36b2e3d42f591d75c0e81a0ac067"
+    },
+    "compile_units": [
+      "CryptHash_AlgorithmInstance.c"
+    ],
+    "repetitions": [
+      {
+        "repeat": 1,
+        "scores": [
+          {
+            "bytes": 32,
+            "opt_over_cap": 3.8911981668939286,
+            "cap_tsc_ticks_per_byte": 22.459485497804764,
+            "opt_tsc_ticks_per_byte": 87.3949260145133,
+            "ref_tsc_ticks_per_byte": 323.952121847927,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 128,
+            "opt_over_cap": 3.8461030157915217,
+            "cap_tsc_ticks_per_byte": 6.3089423887802445,
+            "opt_tsc_ticks_per_byte": 24.264194828448716,
+            "ref_tsc_ticks_per_byte": 85.36520929619817,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 512,
+            "opt_over_cap": 1.9473228833523304,
+            "cap_tsc_ticks_per_byte": 5.416589236495552,
+            "opt_tsc_ticks_per_byte": 10.547957240944964,
+            "ref_tsc_ticks_per_byte": 72.68520053070371,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 1024,
+            "opt_over_cap": 1.711873532763077,
+            "cap_tsc_ticks_per_byte": 4.6723371449083,
+            "opt_tsc_ticks_per_byte": 7.9983941068743425,
+            "ref_tsc_ticks_per_byte": 62.955698296575264,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 4096,
+            "opt_over_cap": 1.3803312236529592,
+            "cap_tsc_ticks_per_byte": 4.474409981529312,
+            "opt_tsc_ticks_per_byte": 6.17613929333073,
+            "ref_tsc_ticks_per_byte": 58.9436999028272,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 8192,
+            "opt_over_cap": 1.3421263660976797,
+            "cap_tsc_ticks_per_byte": 4.391288653458699,
+            "opt_tsc_ticks_per_byte": 5.893633323140664,
+            "ref_tsc_ticks_per_byte": 58.900838795274794,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 16384,
+            "opt_over_cap": 1.348940989832883,
+            "cap_tsc_ticks_per_byte": 4.3539999971295344,
+            "opt_tsc_ticks_per_byte": 5.873383455937452,
+            "ref_tsc_ticks_per_byte": 58.7118118588287,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 65536,
+            "opt_over_cap": 1.264758247322245,
+            "cap_tsc_ticks_per_byte": 4.447848235026444,
+            "opt_tsc_ticks_per_byte": 5.6255514220436025,
+            "ref_tsc_ticks_per_byte": 58.564508570302834,
+            "hardware_core_cpb": null
+          }
+        ],
+        "gm8_opt_over_cap": 1.8824518965000907
+      },
+      {
+        "repeat": 2,
+        "scores": [
+          {
+            "bytes": 32,
+            "opt_over_cap": 3.8411878833875797,
+            "cap_tsc_ticks_per_byte": 22.611886770418625,
+            "opt_tsc_ticks_per_byte": 86.8577031805956,
+            "ref_tsc_ticks_per_byte": 329.4604891031095,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 128,
+            "opt_over_cap": 3.643749501624301,
+            "cap_tsc_ticks_per_byte": 6.624803590302599,
+            "opt_tsc_ticks_per_byte": 24.13924256881838,
+            "ref_tsc_ticks_per_byte": 87.19504705750116,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 512,
+            "opt_over_cap": 1.921163728216242,
+            "cap_tsc_ticks_per_byte": 5.500035512565459,
+            "opt_tsc_ticks_per_byte": 10.566495196654007,
+            "ref_tsc_ticks_per_byte": 72.66499419259553,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 1024,
+            "opt_over_cap": 1.6781833474046617,
+            "cap_tsc_ticks_per_byte": 4.788198980954566,
+            "opt_tsc_ticks_per_byte": 8.035354935296692,
+            "ref_tsc_ticks_per_byte": 62.26768259482809,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 4096,
+            "opt_over_cap": 1.3804872497385345,
+            "cap_tsc_ticks_per_byte": 4.516981563945808,
+            "opt_tsc_ticks_per_byte": 6.235716017165987,
+            "ref_tsc_ticks_per_byte": 59.719949401251164,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 8192,
+            "opt_over_cap": 1.318439348050135,
+            "cap_tsc_ticks_per_byte": 4.512676338158031,
+            "opt_tsc_ticks_per_byte": 5.949772296565594,
+            "ref_tsc_ticks_per_byte": 58.66562554387763,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 16384,
+            "opt_over_cap": 1.2976787704843837,
+            "cap_tsc_ticks_per_byte": 4.50905982574614,
+            "opt_tsc_ticks_per_byte": 5.851425331417877,
+            "ref_tsc_ticks_per_byte": 58.92032102074953,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 65536,
+            "opt_over_cap": 1.2602880837271115,
+            "cap_tsc_ticks_per_byte": 4.5160937639746335,
+            "opt_tsc_ticks_per_byte": 5.69166901087997,
+            "ref_tsc_ticks_per_byte": 58.91126372082399,
+            "hardware_core_cpb": null
+          }
+        ],
+        "gm8_opt_over_cap": 1.8450937139857078
+      },
+      {
+        "repeat": 3,
+        "scores": [
+          {
+            "bytes": 32,
+            "opt_over_cap": 3.812058843158399,
+            "cap_tsc_ticks_per_byte": 22.172255827646968,
+            "opt_tsc_ticks_per_byte": 84.52189802415471,
+            "ref_tsc_ticks_per_byte": 315.2539971984245,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 128,
+            "opt_over_cap": 3.705911964478378,
+            "cap_tsc_ticks_per_byte": 6.32377049474474,
+            "opt_tsc_ticks_per_byte": 23.435391794336866,
+            "ref_tsc_ticks_per_byte": 84.37741330590579,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 512,
+            "opt_over_cap": 1.9258940585522815,
+            "cap_tsc_ticks_per_byte": 5.33997110801168,
+            "opt_tsc_ticks_per_byte": 10.284170188526067,
+            "ref_tsc_ticks_per_byte": 71.01430088458675,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 1024,
+            "opt_over_cap": 1.677938288504875,
+            "cap_tsc_ticks_per_byte": 4.623223795749158,
+            "opt_tsc_ticks_per_byte": 7.757404214084768,
+            "ref_tsc_ticks_per_byte": 60.952140581489786,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 4096,
+            "opt_over_cap": 1.3653076953554129,
+            "cap_tsc_ticks_per_byte": 4.378422373592263,
+            "opt_tsc_ticks_per_byte": 5.977912874505071,
+            "ref_tsc_ticks_per_byte": 57.14683630914971,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 8192,
+            "opt_over_cap": 1.321005252461092,
+            "cap_tsc_ticks_per_byte": 4.374401630741535,
+            "opt_tsc_ticks_per_byte": 5.778525380804988,
+            "ref_tsc_ticks_per_byte": 56.94680234701327,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 16384,
+            "opt_over_cap": 1.2605318559939587,
+            "cap_tsc_ticks_per_byte": 4.423661600245108,
+            "opt_tsc_ticks_per_byte": 5.576073127217812,
+            "ref_tsc_ticks_per_byte": 56.886234849986465,
+            "hardware_core_cpb": null
+          },
+          {
+            "bytes": 65536,
+            "opt_over_cap": 1.2629732885667437,
+            "cap_tsc_ticks_per_byte": 4.3634523117896356,
+            "opt_tsc_ticks_per_byte": 5.510971975798654,
+            "ref_tsc_ticks_per_byte": 57.093517567851755,
+            "hardware_core_cpb": null
+          }
+        ],
+        "gm8_opt_over_cap": 1.8394723670487994
+      }
+    ],
+    "primary_opt_over_cap_geomean": 1.6892568536720574,
+    "gm8_opt_over_cap": 1.855575066372184,
+    "hardware_core_cpb": null,
+    "generation_label": "REF+KAT-only",
+    "historical_evidence_only": true,
+    "status": "staged_not_freshly_validated"
+  },
+  "package_verification": {
+    "status": "passed",
+    "instance": "Iphe-768",
+    "archive_sha256": "647db0bbfb90dcde161bff9806c1d928f974ad5c20db5c168e7eb9bf25682306",
+    "prebuilt_binary_sha256": "e93b3bcd6b25991c7fef0d0c8ef64ea50773220c293eb02cdd995224da5373dc",
+    "rebuilt_binary_sha256": "e93b3bcd6b25991c7fef0d0c8ef64ea50773220c293eb02cdd995224da5373dc",
+    "checks": [
+      {
+        "stage": "prebuilt_kat",
+        "exit_code": 0,
+        "stdout_tail": "KAT: checked=4097 match=4097 total_records=4097 pass=True\n"
+      },
+      {
+        "stage": "rebuild",
+        "exit_code": 0,
+        "stdout_tail": ""
+      },
+      {
+        "stage": "rebuilt_kat",
+        "exit_code": 0,
+        "stdout_tail": "KAT: checked=4097 match=4097 total_records=4097 pass=True\n"
+      }
+    ],
+    "scope": "archive prebuilt and rebuilt KAT_2_12; no speed remeasurement"
+  },
+  "limits": [
+    "Known corpus; unseen pretraining not established.",
+    "Tests do not prove cryptographic security or constant-time behavior."
+  ]
+}
