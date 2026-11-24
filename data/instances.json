@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-24",
- "n": 72,
+ "n": 73,
  "instances": [
   {
    "instance": "AFS-TrEDM-1024",
@@ -80,17 +80,31 @@
    "id": "hash-03",
    "digest_bits": "1024",
    "form": "AVX2 C",
-   "ref": "675.48",
-   "opt": "21.80",
-   "our": "17.91",
-   "s4": "1.22",
-   "gm": "1.20",
-   "sha": "71a21553ebdcf9eb",
+   "ref": "684.09",
+   "opt": "21.73",
+   "our": "15.63",
+   "s4": "1.39",
+   "gm": "1.38",
+   "sha": "fda0e8efa1205d88",
    "zip": "instances/C-HASH-1024.zip",
-   "mb": 1.86,
+   "mb": 1.98,
    "alg": "C-HASH",
    "db": "1024",
-   "audit_n": 4
+   "audit_n": 4,
+   "legacy_before_cap": {
+    "ref": "675.48",
+    "opt": "21.80",
+    "our": "17.91",
+    "s4": "1.22",
+    "gm": "1.20",
+    "sha": "71a21553ebdcf9eb",
+    "zip": "instances/C-HASH-1024.zip",
+    "mb": 1.86
+   },
+   "metric_basis": "TSC ticks/B",
+   "generation_label": "REF+KAT-only",
+   "provenance_uri": "data/cap/C-HASH-1024.json",
+   "cap_batch": "20261124-02"
   },
   {
    "instance": "C-HASH-512",
@@ -956,18 +970,32 @@
    "algorithm": "Garnet",
    "id": "hash-11",
    "digest_bits": "768",
-   "form": "标量 C",
-   "ref": "32.19",
-   "opt": "32.30",
-   "our": "27.96",
-   "s4": "1.16",
-   "gm": "1.15",
-   "sha": "54aab183816ca3b8",
+   "form": "AVX2 C",
+   "ref": "33.80",
+   "opt": "59.50",
+   "our": "24.96",
+   "s4": "2.38",
+   "gm": "2.39",
+   "sha": "5c8adb30ffffb18e",
    "zip": "instances/Garnet-768.zip",
-   "mb": 1.72,
+   "mb": 1.85,
    "alg": "Garnet",
    "db": "768",
-   "audit_n": 4
+   "audit_n": 4,
+   "legacy_before_cap": {
+    "ref": "32.19",
+    "opt": "32.30",
+    "our": "27.96",
+    "s4": "1.16",
+    "gm": "1.15",
+    "sha": "54aab183816ca3b8",
+    "zip": "instances/Garnet-768.zip",
+    "mb": 1.72
+   },
+   "metric_basis": "TSC ticks/B",
+   "generation_label": "REF+KAT-only",
+   "provenance_uri": "data/cap/Garnet-768.json",
+   "cap_batch": "20261124-02"
   },
   {
    "instance": "CHAMP-512",
@@ -1322,6 +1350,28 @@
    "generation_label": "REF+KAT-only",
    "provenance_uri": "data/cap/AFS-TrEDM-512.json",
    "lineage": "own-history continuation"
+  },
+  {
+   "instance": "Garnet-1024",
+   "algorithm": "Garnet",
+   "id": "hash-11",
+   "digest_bits": "1024",
+   "alg": "Garnet",
+   "db": "1024",
+   "audit_n": 3,
+   "ref": "23.43",
+   "opt": "40.98",
+   "our": "17.92",
+   "s4": "2.29",
+   "gm": "2.28",
+   "form": "AVX2 C",
+   "sha": "445b7fdf5e25b93b",
+   "zip": "instances/Garnet-1024.zip",
+   "mb": 1.99,
+   "metric_basis": "TSC ticks/B",
+   "generation_label": "REF+KAT-only",
+   "provenance_uri": "data/cap/Garnet-1024.json",
+   "cap_batch": "20261124-02"
   }
  ]
 }
