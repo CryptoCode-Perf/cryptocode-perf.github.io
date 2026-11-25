@@ -1,0 +1,417 @@
+{
+  "instance": "Vedak-768",
+  "task": "vedak768-dsh-gate2-structural-v3",
+  "candidate": "candidate_01",
+  "generation_label": "REF+KAT-only",
+  "source_audit_sha256": "44edc23f5036e1584da5957cb6bbdafc073bbdf3924872198e5180efb79a4b64",
+  "archive_sha256": "278e8c96fccb53557edb62a38d90339671f66572ed45da7122e83e127cf069ff",
+  "metric_basis": "TSC ticks/B; not hardware core cycles",
+  "hardware_core_cpb": null,
+  "table_metrics_scope": "Historical original OPT and candidate: three repetitions, pooled TSC/byte at 1024 B; GM is geometric mean of 24 per-round per-size OPT/candidate wall-time ratios.",
+  "historical_opt_over_candidate_1024_geomean": 1.1422442015692231,
+  "site_over_candidate_1024_geomean_separate_comparison": 1.2225292430696186,
+  "historical_audit": {
+    "passed": true,
+    "task_id": "vedak768-dsh-gate2-structural-v3",
+    "instance": "Vedak-768",
+    "generator_kind": "external_harness",
+    "harness": "DSH-headless",
+    "model": "deepseek-v4.1-flash",
+    "calls_reported_by_harness": 26,
+    "selected": "candidate_01",
+    "candidate_audit": [
+      {
+        "candidate": "candidate_01",
+        "status": "validated",
+        "sha256": "d2c1d3da5829f2b224be0027ecbadce6c8148a09246024089a953b46ceab6a92"
+      }
+    ],
+    "primary_bytes": 1024,
+    "formal_opt_over_our_1run": 1.1107226507031516,
+    "replication": {
+      "status": "completed",
+      "source_session": "/mnt/c/CAP/lab/runs/vedak768-dsh-gate2-structural-v3",
+      "repetitions": 3,
+      "primary_bytes": 1024,
+      "results": [
+        {
+          "invocation": 1,
+          "primary_mean_speedups": {
+            "reference_o2": 13.67402695515568,
+            "reference_same": 11.612593080742641,
+            "official_optimized": 1.1498294833113194
+          },
+          "formal_status": "timing_complete_cycles_unavailable"
+        },
+        {
+          "invocation": 2,
+          "primary_mean_speedups": {
+            "reference_same": 11.409189824071447,
+            "official_optimized": 1.1329286115729524,
+            "reference_o2": 13.830251442285077
+          },
+          "formal_status": "timing_complete_cycles_unavailable"
+        },
+        {
+          "invocation": 3,
+          "primary_mean_speedups": {
+            "official_optimized": 1.1440391880206913,
+            "reference_o2": 13.966481572560518,
+            "reference_same": 11.573250710469605
+          },
+          "formal_status": "timing_complete_cycles_unavailable"
+        }
+      ],
+      "summary": {
+        "reference_o2": {
+          "ratios": [
+            13.67402695515568,
+            13.830251442285077,
+            13.966481572560518
+          ],
+          "geometric_mean": 13.823069983112482,
+          "minimum": 13.67402695515568,
+          "all_three_above_1_01": true
+        },
+        "reference_same": {
+          "ratios": [
+            11.612593080742641,
+            11.409189824071447,
+            11.573250710469605
+          ],
+          "geometric_mean": 11.531340380565725,
+          "minimum": 11.409189824071447,
+          "all_three_above_1_01": true
+        },
+        "official_optimized": {
+          "ratios": [
+            1.1498294833113194,
+            1.1329286115729524,
+            1.1440391880206913
+          ],
+          "geometric_mean": 1.1422442015692231,
+          "minimum": 1.1329286115729524,
+          "all_three_above_1_01": true
+        }
+      },
+      "claim_limit": "Three exploratory independent invocations in same machine session; not a population confidence interval",
+      "wall_budget": "post-selection evaluator work, common to all arms; outside generation cap",
+      "cycles_limit": "Each invocation reports hardware cycles availability independently; no TSC substitution"
+    },
+    "replication_opt_over_our_geomean": 1.1422442015692231,
+    "replication_all3_over_1_01": true,
+    "formal_status": "timing_complete_cycles_unavailable",
+    "long_kat": "passed",
+    "formal_reports_audited": [
+      "confirmation\\formal\\report.json",
+      "confirmation\\formal\\report.json",
+      "formal\\report.json",
+      "formal\\report.json",
+      "formal\\report.json",
+      "formal\\report.json",
+      "initial_reference_formal\\report.json",
+      "measurements\\candidate_01\\report.json",
+      "measurements\\candidate_01\\report.json"
+    ],
+    "guide_profile_sha256": "5e1f264ab5e6b3bc2bd08a40010e87fe59471da711e9b79c6f6724a5dafa6899",
+    "trace_sha256": "75687fa3f4aa53321694942cd1e005cbc2afd701034e3989051774ae1a520485",
+    "trace_path": "C:\\CAP\\handoff\\active\\vedak768-dsh-gate2-structural-v3\\trace\\interaction_log.md",
+    "tsc_ticks_per_byte_estimate": {
+      "metric": "TSC ticks/byte estimate; not hardware core-cycle CPB",
+      "source_session": "C:\\CAP\\lab\\runs\\vedak768-dsh-gate2-structural-v3",
+      "source_replication": "C:\\CAP\\lab\\runs\\vedak768-dsh-gate2-structural-v3\\independent_replication",
+      "samples_per_variant_size": 303,
+      "rows": [
+        {
+          "variant": "reference_o2",
+          "bytes": 32,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 13119.752494585397,
+          "tsc_ticks_per_byte": 409.99226545579364,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 128,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 27177.70217099835,
+          "tsc_ticks_per_byte": 212.3257982109246,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 512,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 70787.36417079208,
+          "tsc_ticks_per_byte": 138.25657064607827,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 1024,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 129596.54816419142,
+          "tsc_ticks_per_byte": 126.55912906659319,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 4096,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 488314.5402227723,
+          "tsc_ticks_per_byte": 119.21741704657526,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 8192,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 964497.7458745874,
+          "tsc_ticks_per_byte": 117.73654124445648,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 16384,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 1907632.9851485149,
+          "tsc_ticks_per_byte": 116.43267731619353,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 65536,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 7593819.1716171615,
+          "tsc_ticks_per_byte": 115.87248491847475,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 32,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 10773.254589521452,
+          "tsc_ticks_per_byte": 336.66420592254536,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 128,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 22458.070454311055,
+          "tsc_ticks_per_byte": 175.45367542430512,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 512,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 59555.68007425743,
+          "tsc_ticks_per_byte": 116.31968764503404,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 1024,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 108117.26026196369,
+          "tsc_ticks_per_byte": 105.58326197457392,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 4096,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 402119.6580033003,
+          "tsc_ticks_per_byte": 98.17374462971199,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 8192,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 798950.670379538,
+          "tsc_ticks_per_byte": 97.5281580053147,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 16384,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 1570024.3094059406,
+          "tsc_ticks_per_byte": 95.82667904088993,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 65536,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 6233627.679867987,
+          "tsc_ticks_per_byte": 95.11760986126689,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 32,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 1069.2394693204785,
+          "tsc_ticks_per_byte": 33.413733416264954,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 128,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 2094.374681730891,
+          "tsc_ticks_per_byte": 16.362302201022587,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 512,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 5201.373581889446,
+          "tsc_ticks_per_byte": 10.158932777127823,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 1024,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 9375.079839624597,
+          "tsc_ticks_per_byte": 9.155351405883396,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 4096,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 34228.46735767327,
+          "tsc_ticks_per_byte": 8.35655941349445,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 8192,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 67035.04282693894,
+          "tsc_ticks_per_byte": 8.18298862633532,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 16384,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 133687.6772380363,
+          "tsc_ticks_per_byte": 8.159648268923114,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 65536,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 537798.3112623763,
+          "tsc_ticks_per_byte": 8.206150989721317,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 32,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 1354.3774945854225,
+          "tsc_ticks_per_byte": 42.32429670579445,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 128,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 2540.3928988113794,
+          "tsc_ticks_per_byte": 19.8468195219639,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 512,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 6019.014380930297,
+          "tsc_ticks_per_byte": 11.755887462754487,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 1024,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 10709.442244224423,
+          "tsc_ticks_per_byte": 10.458439691625413,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 4096,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 38746.106409859734,
+          "tsc_ticks_per_byte": 9.459498635219662,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 8192,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 75693.17922339108,
+          "tsc_ticks_per_byte": 9.239890041917857,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 16384,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 150936.71689356436,
+          "tsc_ticks_per_byte": 9.212446099460715,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 65536,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 602454.0396039604,
+          "tsc_ticks_per_byte": 9.192719110167852,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        }
+      ],
+      "raw_csv_sha256": {
+        "independent_replication\\repeat_01\\reference_o2\\raw.csv": "e87ad07f08ad331a6cdf26e80f1273495f6403162fadbcea823f401f080a011c",
+        "independent_replication\\repeat_02\\reference_o2\\raw.csv": "84170d7a71c23f92016f754d54a5e9773b46144e18d3f524cbafb621b7bf4342",
+        "independent_replication\\repeat_03\\reference_o2\\raw.csv": "f94a82091fab5dcc8f050f8e31ef251cae34f9303d38765505b0967ca93408f9",
+        "independent_replication\\repeat_01\\reference_same\\raw.csv": "f400ed84a4948a3e0cc2bfdc9260babb1f1478ca114f446d88c85f4df3ed99d7",
+        "independent_replication\\repeat_02\\reference_same\\raw.csv": "5a05ffa6dba72d533fd1bf6273fd89dffeac898c5b40017c800493a1752720d4",
+        "independent_replication\\repeat_03\\reference_same\\raw.csv": "421cdc1ed067583b34ac88cd2d34a41e8c1c012a74f421a83921d762581bcc54",
+        "independent_replication\\repeat_01\\delivered\\raw.csv": "50cf17f1c91b3b0e8ac91f86c0f51b8db8fdffb9bcb637fce516022d160392d9",
+        "independent_replication\\repeat_02\\delivered\\raw.csv": "aec5c14e7fcb198d7c15ca64b97366991bd305b86e4348fe97b4b80486be9d3d",
+        "independent_replication\\repeat_03\\delivered\\raw.csv": "4592d8475de89580582bae94b9241721e3c6f1cc3c7697c8c3114a8b60cc3059",
+        "independent_replication\\repeat_01\\official_optimized\\raw.csv": "a0f76d4bda2ac549f49c3d82c1cb44a3894ca2f1eed35972b7b9505b43a889fd",
+        "independent_replication\\repeat_02\\official_optimized\\raw.csv": "f7713fbf6237b3af4cb6943ab3e1c9d06e27422842c4eed21c40580f8d932d00",
+        "independent_replication\\repeat_03\\official_optimized\\raw.csv": "b3336b5a8c40cd2e2c5c38f744f5ad85a11187cc518373481e1f40c399fe5828"
+      },
+      "limitations": [
+        "TSC may be scaled or virtualized",
+        "not PMU core cycles",
+        "not a substitute for CPB acceptance"
+      ]
+    },
+    "our_tsc_ticks_per_byte_1024": 9.155351405883396,
+    "opt_tsc_ticks_per_byte_1024": 10.458439691625413,
+    "our_hardware_core_cycle_cpb_1024": null,
+    "opt_hardware_core_cycle_cpb_1024": null,
+    "scope_limits": [
+      "Harness/model call count is recorded from the external harness trace and operator metadata.",
+      "Prior model exposure is not independently known.",
+      "Constant-time behavior is not assessed.",
+      "Hardware core-cycle CPB is unavailable unless PMU evidence is present."
+    ]
+  },
+  "limits": [
+    "Known corpus and model pretraining exposure unknown.",
+    "Tests are not a cryptographic security or constant-time proof."
+  ]
+}
