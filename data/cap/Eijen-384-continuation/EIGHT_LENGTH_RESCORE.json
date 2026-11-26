@@ -1,0 +1,53 @@
+{
+  "rounds": [
+    {
+      "report": "C:\\CAP\\lab\\runs\\eijen384-dsh-own-continue-20261126-v2\\independent_replication\\repeat_01\\report.json",
+      "sha256": "614176b30bdc7f243d0495a8b4344b564f6de71b7e8091d359a16bd7ae327b85",
+      "ratios_baseline_over_candidate": {
+        "32": 1.2165842381023844,
+        "128": 1.2223025718955436,
+        "512": 1.2534508717116564,
+        "1024": 1.215020781646674,
+        "4096": 1.2242213474471735,
+        "8192": 1.2444311778324284,
+        "16384": 1.2165415786008325,
+        "65536": 1.2586607776960332
+      },
+      "eight_length_geomean": 1.2312884415595513
+    },
+    {
+      "report": "C:\\CAP\\lab\\runs\\eijen384-dsh-own-continue-20261126-v2\\independent_replication\\repeat_02\\report.json",
+      "sha256": "2c6991ac76f9d9ded6ffbf0883b7492d36c96594589afcd20534f7610fb0a2df",
+      "ratios_baseline_over_candidate": {
+        "32": 1.1668622024661177,
+        "128": 1.2245602785087555,
+        "512": 1.2146644106709952,
+        "1024": 1.249437933893804,
+        "4096": 1.2198490756557776,
+        "8192": 1.228381648225141,
+        "16384": 1.2713006930277928,
+        "65536": 1.2603726121901087
+      },
+      "eight_length_geomean": 1.2290503493244014
+    },
+    {
+      "report": "C:\\CAP\\lab\\runs\\eijen384-dsh-own-continue-20261126-v2\\independent_replication\\repeat_03\\report.json",
+      "sha256": "5f3fc94f160a70debe1d85133c0ac72cc464a1abf980e45e581419626dea0af3",
+      "ratios_baseline_over_candidate": {
+        "32": 1.1638594783441938,
+        "128": 1.1938237756237005,
+        "512": 1.2937666266800154,
+        "1024": 1.3022618589947026,
+        "4096": 1.3018899043280232,
+        "8192": 1.2948125291628103,
+        "16384": 1.290376807697689,
+        "65536": 1.3255957192768675
+      },
+      "eight_length_geomean": 1.2695884969443494
+    }
+  ],
+  "three_round_eight_length_geomean": 1.2431708514322035,
+  "numeric_threshold_1_05_met": true,
+  "scope": "arithmetic mean baseline/candidate time ratio per length; eight equal weights; three equal-weight rounds",
+  "qualification": "numeric calculation only; baseline identity, calibration, provenance, correctness, eligibility and original rules not verified"
+}

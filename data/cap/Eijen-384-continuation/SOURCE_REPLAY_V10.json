@@ -1,0 +1,1125 @@
+{
+  "task_id": "eijen384-dsh-own-continue-20261126-v2",
+  "passed": true,
+  "rounds": [
+    {
+      "round": 2,
+      "candidate": null,
+      "session_id": "session-910f2908-f9d8-447e-b5cf-75f3af19537b",
+      "source_files": {
+        "CryptHash_AlgorithmInstance.c": {
+          "actual_source_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "parent_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        },
+        "eijen_ref.c": {
+          "actual_source_sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+          "parent_sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        }
+      },
+      "request_headers": [
+        {
+          "provider": "workbuddy",
+          "model": "hy4flash-free",
+          "maxTokens": 32768,
+          "reasoningEffort": "high"
+        }
+      ],
+      "turn_outcome": {
+        "kind": "error",
+        "code": "SERVER"
+      },
+      "tool_file_paths": [],
+      "successful_source_edits": 0,
+      "durable_sha256": "708c5315439d2104c53e20057fd38c8173d0221600b5d25f8b67d7adb3fddad4",
+      "decompressed_sha256": "1d3f0185bbe8fb477c6fa020abf5cbdde82a3673ab84d8b74696c884016b86eb"
+    },
+    {
+      "round": 3,
+      "candidate": null,
+      "session_id": "session-7b503651-eb1c-414e-ad4c-76bba58b2ac9",
+      "source_files": {
+        "CryptHash_AlgorithmInstance.c": {
+          "actual_source_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "parent_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        },
+        "eijen_ref.c": {
+          "actual_source_sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+          "parent_sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        }
+      },
+      "request_headers": [
+        {
+          "provider": "workbuddy",
+          "model": "hy4flash-free",
+          "maxTokens": 32768,
+          "reasoningEffort": "high"
+        }
+      ],
+      "turn_outcome": {
+        "kind": "error",
+        "code": "SERVER"
+      },
+      "tool_file_paths": [],
+      "successful_source_edits": 0,
+      "durable_sha256": "4e22854f9cdf1f9da2e4c831ef92d7d200db64c4eece5c3f0fe696824abf29cc",
+      "decompressed_sha256": "01d5736e8429023ccffa84fd649859d6d66b30a64070543dc8e4b888fbb9ad98"
+    },
+    {
+      "round": 4,
+      "candidate": null,
+      "session_id": "session-49c9ebfa-3dba-4d69-b09c-7674e5c07173",
+      "source_files": {
+        "CryptHash_AlgorithmInstance.c": {
+          "actual_source_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "parent_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        },
+        "eijen_ref.c": {
+          "actual_source_sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+          "parent_sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        }
+      },
+      "request_headers": [
+        {
+          "provider": "workbuddy",
+          "model": "hy4flash-free",
+          "maxTokens": 32768,
+          "reasoningEffort": "high"
+        }
+      ],
+      "turn_outcome": {
+        "kind": "error",
+        "code": "SERVER"
+      },
+      "tool_file_paths": [],
+      "successful_source_edits": 0,
+      "durable_sha256": "05c07558c38e945e024a24eb0ede3d7490b241ca1bd2af47c7e300f1a2eb462d",
+      "decompressed_sha256": "725c08571b55d776068a25290bd112f0f1d99f6cec196f3e06fbde937587be5e"
+    },
+    {
+      "round": 5,
+      "candidate": null,
+      "session_id": "session-dfa26596-f737-4ca0-b169-b2135b30486e",
+      "source_files": {
+        "CryptHash_AlgorithmInstance.c": {
+          "actual_source_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "parent_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        },
+        "eijen_ref.c": {
+          "actual_source_sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+          "parent_sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        }
+      },
+      "request_headers": [
+        {
+          "provider": "workbuddy",
+          "model": "hy4flash-free",
+          "maxTokens": 32768,
+          "reasoningEffort": "high"
+        }
+      ],
+      "turn_outcome": {
+        "kind": "error",
+        "code": "SERVER"
+      },
+      "tool_file_paths": [],
+      "successful_source_edits": 0,
+      "durable_sha256": "91953346b7741da38557b800c40af91da864da19273fa84fe7c42a377ea50d25",
+      "decompressed_sha256": "336a5484b229248fc38795f932cda00998490b522c54114bf06400fd72662638"
+    },
+    {
+      "round": 6,
+      "candidate": "candidate_02",
+      "session_id": "session-09f77490-0c51-491a-b928-3f5ed672f1e6",
+      "source_files": {
+        "CryptHash_AlgorithmInstance.c": {
+          "actual_source_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "parent_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        },
+        "eijen_ref.c": {
+          "actual_source_sha256": "f1a27d5f3ac8dfeb822be65279b5bfbe79a018228ce29bf26f3fd8ead987c938",
+          "parent_sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 1
+        }
+      },
+      "request_headers": [
+        {
+          "provider": "workbuddy",
+          "model": "hy4flash-free",
+          "maxTokens": 32768,
+          "reasoningEffort": "high"
+        }
+      ],
+      "turn_outcome": {
+        "kind": "completed"
+      },
+      "tool_file_paths": [
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/crypthash_algorithminstance.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/task_contract.json"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/knowledge_patterns.jsonl"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen.h"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen_internal.h"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "write",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        }
+      ],
+      "successful_source_edits": 1,
+      "durable_sha256": "58958d48748598f871e66b2b6888a2e551270e5c5c5aa063ac73fa7b959dac93",
+      "decompressed_sha256": "eb12c532fbfc4a0557ba9e5e179e388214fb792d3c6e945ca51e0cc74da77b9e"
+    },
+    {
+      "round": 7,
+      "candidate": "candidate_03",
+      "session_id": "session-2e3e8e3f-6c5e-48b0-b25d-2847a48fa5a5",
+      "source_files": {
+        "CryptHash_AlgorithmInstance.c": {
+          "actual_source_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "parent_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        },
+        "eijen_ref.c": {
+          "actual_source_sha256": "e53c38ad2b8e102c7f7a77194d00fd82c28cf656f3b03d9da65f303139c8d412",
+          "parent_sha256": "f1a27d5f3ac8dfeb822be65279b5bfbe79a018228ce29bf26f3fd8ead987c938",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 1
+        }
+      },
+      "request_headers": [
+        {
+          "provider": "workbuddy",
+          "model": "hy4flash-free",
+          "maxTokens": 32768,
+          "reasoningEffort": "high"
+        }
+      ],
+      "turn_outcome": {
+        "kind": "completed"
+      },
+      "tool_file_paths": [
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/crypthash_algorithminstance.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/task_contract.json"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/knowledge_patterns.jsonl"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "write",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        }
+      ],
+      "successful_source_edits": 1,
+      "durable_sha256": "f55e91e85cc684e7275798cad5ca7058314c27f0803a01f8cc9c5f148f945f1a",
+      "decompressed_sha256": "6ffffc73a7909ea50c629ef572e406a64d1191b99ebe7bcf1927f64421b7ac45"
+    },
+    {
+      "round": 8,
+      "candidate": "candidate_04",
+      "session_id": "session-0d1c3678-c58d-4022-98bb-68cbd810044a",
+      "source_files": {
+        "CryptHash_AlgorithmInstance.c": {
+          "actual_source_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "parent_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        },
+        "eijen_ref.c": {
+          "actual_source_sha256": "e08696ccf54143e91313ab7ed37ddff93e43cd6c60e5a64431a14ec2d0c6c658",
+          "parent_sha256": "e53c38ad2b8e102c7f7a77194d00fd82c28cf656f3b03d9da65f303139c8d412",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 4
+        }
+      },
+      "request_headers": [
+        {
+          "provider": "workbuddy",
+          "model": "hy4flash-free",
+          "maxTokens": 32768,
+          "reasoningEffort": "high"
+        }
+      ],
+      "turn_outcome": {
+        "kind": "completed"
+      },
+      "tool_file_paths": [
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/crypthash_algorithminstance.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/task_contract.json"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/knowledge_patterns.jsonl"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen_internal.h"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen.h"
+        },
+        {
+          "tool": "write",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        }
+      ],
+      "successful_source_edits": 4,
+      "durable_sha256": "7fbbf8ce19b9c3047d5844fa1d74c20c6fdef7e5c1bea46f517412ea29c7a7ce",
+      "decompressed_sha256": "6a187a8e2d97a720c4738e68924a77fdfa10d73f02d3f07d2053cff1295ff6c4"
+    },
+    {
+      "round": 9,
+      "candidate": "candidate_05",
+      "session_id": "session-38a318fb-3171-4172-99a2-4116e38aaa9b",
+      "source_files": {
+        "CryptHash_AlgorithmInstance.c": {
+          "actual_source_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "parent_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        },
+        "eijen_ref.c": {
+          "actual_source_sha256": "7aa91bbb48fa5abcd600dc950fd4204a32ad00afc1ffcc281b6cd2dc55c1e6c0",
+          "parent_sha256": "e53c38ad2b8e102c7f7a77194d00fd82c28cf656f3b03d9da65f303139c8d412",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 11
+        }
+      },
+      "request_headers": [
+        {
+          "provider": "workbuddy",
+          "model": "hy4flash-free",
+          "maxTokens": 32768,
+          "reasoningEffort": "high"
+        }
+      ],
+      "turn_outcome": {
+        "kind": "completed"
+      },
+      "tool_file_paths": [
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/crypthash_algorithminstance.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/task_contract.json"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/knowledge_patterns.jsonl"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen_internal.h"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen.h"
+        },
+        {
+          "tool": "write",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "write",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        }
+      ],
+      "successful_source_edits": 11,
+      "durable_sha256": "5b364acffbfacea26a953defce72d73866a2b5f1e715a2cefd47f419af4ba13f",
+      "decompressed_sha256": "aad0b0a888eaa78e976600c9d8b6895fd91de334cc2e0e61f533d0d53c87e0a6"
+    },
+    {
+      "round": 10,
+      "candidate": "candidate_06",
+      "session_id": "session-e825860b-8c1f-40ec-ae27-3c5a8b48c4b1",
+      "source_files": {
+        "CryptHash_AlgorithmInstance.c": {
+          "actual_source_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "parent_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        },
+        "eijen_ref.c": {
+          "actual_source_sha256": "ccb017dbef984791dadb46b7d5ab06db29c29358fbcd8fe5bdafda2835eb6a51",
+          "parent_sha256": "7aa91bbb48fa5abcd600dc950fd4204a32ad00afc1ffcc281b6cd2dc55c1e6c0",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 4
+        }
+      },
+      "request_headers": [
+        {
+          "provider": "workbuddy",
+          "model": "hy4flash-free",
+          "maxTokens": 32768,
+          "reasoningEffort": "high"
+        }
+      ],
+      "turn_outcome": {
+        "kind": "completed"
+      },
+      "tool_file_paths": [
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/crypthash_algorithminstance.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/task_contract.json"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/knowledge_patterns.jsonl"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen.h"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen_internal.h"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        }
+      ],
+      "successful_source_edits": 4,
+      "durable_sha256": "4da0373367b017e1b37bf282fb12e930380f8433af9625ffa62ec0e0b7b508de",
+      "decompressed_sha256": "9a4d6883a9b3c171ce02e631fb04b3a2ba0f988ff1032c12f18cfa6cefdea59f"
+    },
+    {
+      "round": 11,
+      "candidate": "candidate_07",
+      "session_id": "session-2c6f8b5e-1498-4ed1-9b9d-2b3e5e2e76cb",
+      "source_files": {
+        "CryptHash_AlgorithmInstance.c": {
+          "actual_source_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "parent_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        },
+        "eijen_ref.c": {
+          "actual_source_sha256": "67e2a1f7861225d7a49a1bed259aad64b51af9c78db7600aafe5903a6c86d502",
+          "parent_sha256": "ccb017dbef984791dadb46b7d5ab06db29c29358fbcd8fe5bdafda2835eb6a51",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 1
+        }
+      },
+      "request_headers": [
+        {
+          "provider": "workbuddy",
+          "model": "hy4flash-free",
+          "maxTokens": 32768,
+          "reasoningEffort": "high"
+        }
+      ],
+      "turn_outcome": {
+        "kind": "completed"
+      },
+      "tool_file_paths": [
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/crypthash_algorithminstance.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/task_contract.json"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/knowledge_patterns.jsonl"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen_internal.h"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen.h"
+        },
+        {
+          "tool": "write",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        }
+      ],
+      "successful_source_edits": 1,
+      "durable_sha256": "af92561bc718993ed22b5e0ad37d18796059640e983e82d05648d7ad931ceb44",
+      "decompressed_sha256": "be8577bc544722bc98ced0e9593591aeb5ced937b05cbace6438cd3a2efe088f"
+    },
+    {
+      "round": 12,
+      "candidate": "candidate_08",
+      "session_id": "session-b13fc5cf-3ce3-46f2-94b2-bbe5d20e6565",
+      "source_files": {
+        "CryptHash_AlgorithmInstance.c": {
+          "actual_source_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "parent_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        },
+        "eijen_ref.c": {
+          "actual_source_sha256": "d89c9b0a3bbbd1f5ed5136308e88452c252a235aed4e4b6e5b951e6ee6e721af",
+          "parent_sha256": "ccb017dbef984791dadb46b7d5ab06db29c29358fbcd8fe5bdafda2835eb6a51",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 7
+        }
+      },
+      "request_headers": [
+        {
+          "provider": "workbuddy",
+          "model": "hy4flash-free",
+          "maxTokens": 32768,
+          "reasoningEffort": "high"
+        }
+      ],
+      "turn_outcome": {
+        "kind": "completed"
+      },
+      "tool_file_paths": [
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/crypthash_algorithminstance.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/task_contract.json"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/knowledge_patterns.jsonl"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen_internal.h"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen.h"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "write",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "write",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        }
+      ],
+      "successful_source_edits": 7,
+      "durable_sha256": "9d3d4707e0d3a5c4fa2e1dcc18a16d2e2177b155b8f9b94850d2a4ecf1aadc32",
+      "decompressed_sha256": "7e35327eab9012a8665c1cb8d094c783f9fadada0270d53388041948019c2e20"
+    },
+    {
+      "round": 13,
+      "candidate": "candidate_09",
+      "session_id": "session-eb56b690-0a84-4fd0-bc6f-70f9f63390e7",
+      "source_files": {
+        "CryptHash_AlgorithmInstance.c": {
+          "actual_source_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "parent_sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 0
+        },
+        "eijen_ref.c": {
+          "actual_source_sha256": "4c1deab1dfe40bec29483fb4e7a1b16b6d71aa22eb242df98bd75f90eb3a636b",
+          "parent_sha256": "ccb017dbef984791dadb46b7d5ab06db29c29358fbcd8fe5bdafda2835eb6a51",
+          "manual_successful_tool_edit_replay": true,
+          "projector_model_and_tool_replay": true,
+          "successful_edits": 4
+        }
+      },
+      "request_headers": [
+        {
+          "provider": "workbuddy",
+          "model": "hy4flash-free",
+          "maxTokens": 32768,
+          "reasoningEffort": "high"
+        }
+      ],
+      "turn_outcome": {
+        "kind": "completed"
+      },
+      "tool_file_paths": [
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/crypthash_algorithminstance.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/task_contract.json"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/knowledge_patterns.jsonl"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen_internal.h"
+        },
+        {
+          "tool": "read",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/input/eijen.h"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        },
+        {
+          "tool": "edit",
+          "path": "c:/cap/handoff/active/eijen384-dsh-own-continue-20261126-v2/candidate/eijen_ref.c"
+        }
+      ],
+      "successful_source_edits": 4,
+      "durable_sha256": "568aedf497392a329b20c3b92a5b6c55cd2aa6e0138bf3cf2c4617f129d61204",
+      "decompressed_sha256": "de2aa60c11145180fe9836781bf36d1c4cddedddd6c654c8d71461a4df24ddd9"
+    }
+  ],
+  "successful_source_edits": 33,
+  "tool_counts": {
+    "read": 56,
+    "edit": 27,
+    "write": 8,
+    "cap_validate": 14,
+    "cap_compile": 15,
+    "cap_linear": 2,
+    "cap_boolean": 6
+  },
+  "whitelist_violations": [],
+  "denied_local_header_reads": [
+    {
+      "round": 7,
+      "requested_path": "eijen_ref.c",
+      "content_returned": false,
+      "result_code": "allowlist_denied"
+    },
+    {
+      "round": 10,
+      "requested_path": "eijen_ref.c",
+      "content_returned": false,
+      "result_code": "allowlist_denied"
+    }
+  ],
+  "denied_local_writes": [],
+  "denied_malformed_native_requests": [],
+  "evidence_bindings": {
+    "C:/CAP/handoff/active/eijen384-dsh-own-continue-20261126-v2/task_contract.json": {
+      "sha256": "29decb6ebf835167047417987005a954dc22eab15fbb5dfc1037f2f2bce59ff2",
+      "bytes": 9777
+    },
+    "C:/CAP/handoff/active/eijen384-dsh-own-continue-20261126-v2/handoff.json": {
+      "sha256": "676a74ba2b16f2475845a68cfcbc8419d96bc52f88121ab3c1f1642599b0038c",
+      "bytes": 13558
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/frozen.json": {
+      "sha256": "4e2137ac4449cd35ee72fc2844dc1cdb52b41fbbd203e5e71a3f1935505ec446",
+      "bytes": 29535
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/state.json": {
+      "sha256": "743454fd4aae0497e23ad5f58800a4800d8c5d5ca22e8d1a11d2b1018796170c",
+      "bytes": 508195
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/rounds.json": {
+      "sha256": "352a6b61e09635c78d88fab1e3da1b7d7a748663e2686415b54d6f2c1908a9cd",
+      "bytes": 3357
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_02/capture_02/session.v4.jsonl.zstd": {
+      "sha256": "708c5315439d2104c53e20057fd38c8173d0221600b5d25f8b67d7adb3fddad4",
+      "bytes": 21710
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_02/capture_02/projection.json": {
+      "sha256": "e993e7226b3753f65eb554389863b1e1b02aded98b05ed56d3caa15c3975ce80",
+      "bytes": 1510
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_02/parent/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_02/parent/eijen_ref.c": {
+      "sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+      "bytes": 10909
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_03/capture_03/session.v4.jsonl.zstd": {
+      "sha256": "4e22854f9cdf1f9da2e4c831ef92d7d200db64c4eece5c3f0fe696824abf29cc",
+      "bytes": 21695
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_03/capture_03/projection.json": {
+      "sha256": "731284b77fd97e1f7852dd2ef2d1d0f54dd3374150ec722e9172277ec930040b",
+      "bytes": 1510
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_03/parent/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_03/parent/eijen_ref.c": {
+      "sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+      "bytes": 10909
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_04/capture_04/session.v4.jsonl.zstd": {
+      "sha256": "05c07558c38e945e024a24eb0ede3d7490b241ca1bd2af47c7e300f1a2eb462d",
+      "bytes": 21395
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_04/capture_04/projection.json": {
+      "sha256": "9dfc68cdb20bec5299ab24b20b95493378fe9a7bd71acb02694ee5b87c1d5e5e",
+      "bytes": 1510
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_04/parent/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_04/parent/eijen_ref.c": {
+      "sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+      "bytes": 10909
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_05/capture_05/session.v4.jsonl.zstd": {
+      "sha256": "91953346b7741da38557b800c40af91da864da19273fa84fe7c42a377ea50d25",
+      "bytes": 20937
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_05/capture_05/projection.json": {
+      "sha256": "974d94d4e4b4906c57c24f0feeab10513aa4abc6976bb37ed609ac15ebf1143e",
+      "bytes": 1510
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_05/parent/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_05/parent/eijen_ref.c": {
+      "sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+      "bytes": 10909
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_06/capture_06/session.v4.jsonl.zstd": {
+      "sha256": "58958d48748598f871e66b2b6888a2e551270e5c5c5aa063ac73fa7b959dac93",
+      "bytes": 111568
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_06/capture_06/projection.json": {
+      "sha256": "d87f24046c10774c953aa9a2793840978f7fb7a061522217c76934d92f856bcc",
+      "bytes": 2835
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_06/parent/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_06/parent/eijen_ref.c": {
+      "sha256": "752a4182174998be368a8c030cda7af83497d082f084b3bbe800440641444bba",
+      "bytes": 10909
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_02/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_02/eijen_ref.c": {
+      "sha256": "f1a27d5f3ac8dfeb822be65279b5bfbe79a018228ce29bf26f3fd8ead987c938",
+      "bytes": 10815
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_07/capture_07/session.v4.jsonl.zstd": {
+      "sha256": "f55e91e85cc684e7275798cad5ca7058314c27f0803a01f8cc9c5f148f945f1a",
+      "bytes": 121249
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_07/capture_07/projection.json": {
+      "sha256": "5f63fa6b32b9c20f5ad3b80d69d459b853da4720528be854f66937d14ea4f6ba",
+      "bytes": 2452
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_07/parent/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_07/parent/eijen_ref.c": {
+      "sha256": "f1a27d5f3ac8dfeb822be65279b5bfbe79a018228ce29bf26f3fd8ead987c938",
+      "bytes": 10815
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_03/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_03/eijen_ref.c": {
+      "sha256": "e53c38ad2b8e102c7f7a77194d00fd82c28cf656f3b03d9da65f303139c8d412",
+      "bytes": 11703
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_08/capture_08/session.v4.jsonl.zstd": {
+      "sha256": "7fbbf8ce19b9c3047d5844fa1d74c20c6fdef7e5c1bea46f517412ea29c7a7ce",
+      "bytes": 140951
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_08/capture_08/projection.json": {
+      "sha256": "df0424535b1e80a001f45f7a128791cc9848e6df7a4dbb85c4636788473e941c",
+      "bytes": 3151
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_08/parent/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_08/parent/eijen_ref.c": {
+      "sha256": "e53c38ad2b8e102c7f7a77194d00fd82c28cf656f3b03d9da65f303139c8d412",
+      "bytes": 11703
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_04/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_04/eijen_ref.c": {
+      "sha256": "e08696ccf54143e91313ab7ed37ddff93e43cd6c60e5a64431a14ec2d0c6c658",
+      "bytes": 12516
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_09/capture_09/session.v4.jsonl.zstd": {
+      "sha256": "5b364acffbfacea26a953defce72d73866a2b5f1e715a2cefd47f419af4ba13f",
+      "bytes": 151110
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_09/capture_09/projection.json": {
+      "sha256": "aa1ef366d3ee02eab34f2a260c0803a81d1a94a6eda40e0b8f1ac5ef93a56192",
+      "bytes": 6404
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_09/parent/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_09/parent/eijen_ref.c": {
+      "sha256": "e53c38ad2b8e102c7f7a77194d00fd82c28cf656f3b03d9da65f303139c8d412",
+      "bytes": 11703
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_05/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_05/eijen_ref.c": {
+      "sha256": "7aa91bbb48fa5abcd600dc950fd4204a32ad00afc1ffcc281b6cd2dc55c1e6c0",
+      "bytes": 12098
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_10/capture_10/session.v4.jsonl.zstd": {
+      "sha256": "4da0373367b017e1b37bf282fb12e930380f8433af9625ffa62ec0e0b7b508de",
+      "bytes": 198570
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_10/capture_10/projection.json": {
+      "sha256": "8773fc1cb2389dd730018359befd4ff6fb31e7b9123020f6ca5efc4f8e145fb5",
+      "bytes": 3427
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_10/parent/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_10/parent/eijen_ref.c": {
+      "sha256": "7aa91bbb48fa5abcd600dc950fd4204a32ad00afc1ffcc281b6cd2dc55c1e6c0",
+      "bytes": 12098
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_06/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_06/eijen_ref.c": {
+      "sha256": "ccb017dbef984791dadb46b7d5ab06db29c29358fbcd8fe5bdafda2835eb6a51",
+      "bytes": 13178
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_11/capture_11/session.v4.jsonl.zstd": {
+      "sha256": "af92561bc718993ed22b5e0ad37d18796059640e983e82d05648d7ad931ceb44",
+      "bytes": 150374
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_11/capture_11/projection.json": {
+      "sha256": "d1f7d58a56892392431a8358da6fc6f321a2bce467c272103e4e15ea97ed2461",
+      "bytes": 2768
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_11/parent/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_11/parent/eijen_ref.c": {
+      "sha256": "ccb017dbef984791dadb46b7d5ab06db29c29358fbcd8fe5bdafda2835eb6a51",
+      "bytes": 13178
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_07/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_07/eijen_ref.c": {
+      "sha256": "67e2a1f7861225d7a49a1bed259aad64b51af9c78db7600aafe5903a6c86d502",
+      "bytes": 13881
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_12/capture_12/session.v4.jsonl.zstd": {
+      "sha256": "9d3d4707e0d3a5c4fa2e1dcc18a16d2e2177b155b8f9b94850d2a4ecf1aadc32",
+      "bytes": 178671
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_12/capture_12/projection.json": {
+      "sha256": "d009a1b6161e3d222bc0dbe21553690d09e7f8c4c9ece60de3f07fb01f91944e",
+      "bytes": 5142
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_12/parent/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_12/parent/eijen_ref.c": {
+      "sha256": "ccb017dbef984791dadb46b7d5ab06db29c29358fbcd8fe5bdafda2835eb6a51",
+      "bytes": 13178
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_08/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_08/eijen_ref.c": {
+      "sha256": "d89c9b0a3bbbd1f5ed5136308e88452c252a235aed4e4b6e5b951e6ee6e721af",
+      "bytes": 13518
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_13/capture_13/session.v4.jsonl.zstd": {
+      "sha256": "568aedf497392a329b20c3b92a5b6c55cd2aa6e0138bf3cf2c4617f129d61204",
+      "bytes": 122964
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_13/capture_13/projection.json": {
+      "sha256": "0882e5efc4ed6ae7d6490341e03e393ead6fb685762bfa1bdf2deaf6963e17de",
+      "bytes": 3900
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_13/parent/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/evaluation/registered_refkat/eijen384-dsh-own-continue-20261126-v2/dsh_search/round_13/parent/eijen_ref.c": {
+      "sha256": "ccb017dbef984791dadb46b7d5ab06db29c29358fbcd8fe5bdafda2835eb6a51",
+      "bytes": 13178
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_09/CryptHash_AlgorithmInstance.c": {
+      "sha256": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+      "bytes": 507
+    },
+    "C:/CAP/lab/runs/eijen384-dsh-own-continue-20261126-v2/candidates/candidate_09/eijen_ref.c": {
+      "sha256": "4c1deab1dfe40bec29483fb4e7a1b16b6d71aa22eb242df98bd75f90eb3a636b",
+      "bytes": 17992
+    }
+  },
+  "native_or_model_started": false,
+  "limits": [
+    "Two independent normalized edit replays use the same durable storage,not independent storage authenticity.",
+    "Requested route is not proof of server weights/billing.",
+    "Known corpus and unknown pretraining;not unseen blind or constant-time/security proof."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "eijen384-dsh-own-continue-20261126-v2",
+  "source_hashes": {
+    "CryptHash_AlgorithmInstance.c": "69b30d1cc7b78c08b3e8e56fffc3ca57f2aa0b97b833d3c23605381b56bce5c0",
+    "eijen_ref.c": "ccb017dbef984791dadb46b7d5ab06db29c29358fbcd8fe5bdafda2835eb6a51"
+  },
+  "zip": "C:\\CAP\\deliverables\\Eijen-384-DSH-Own-C06-20261126.zip",
+  "zip_sha256": "a5d50fe9be086f7f8b65038c8246a088ff8a2015b6eb50acffff8f2dfd36dcbf",
+  "independent_source_audit": "C:\\CAP\\evaluation\\roi\\EIJEN384_MULTITURN_20261126_V1\\INDEPENDENT_SOURCE_AUDIT_V14.json",
+  "independent_source_audit_sha256": "e624c823813356f88e20413eb60765f07cc7fa90499fc6779abf16bf33f01a37",
+  "all_required_guard_closeout_replay_audit_evidence_passed": true,
+  "classification": "new_source_OPT_win",
+  "unique_algorithm_increment": "Separate registry decision;not inferred by package",
+  "primary_OPT_over_our": 1.2550631300037267,
+  "hardware_CPB": null,
+  "source_bytes_edited": false,
+  "native_or_model_calls": 0,
+  "file_count": 95,
+  "archive_bytes": 1583524
+}
