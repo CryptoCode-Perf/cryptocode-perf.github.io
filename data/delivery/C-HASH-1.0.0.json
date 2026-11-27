@@ -1,0 +1,78 @@
+{
+  "algorithm": "C-HASH",
+  "version": "1.0.0",
+  "archive": "instances/C-HASH-1.0.0.zip",
+  "archive_sha256": "849dbe9bb2866b1da26805085fc7b66a10b501bbd0ad20e38990c86aef1085fd",
+  "instances": {
+    "C-HASH-512": {
+      "ref": "371.201",
+      "opt": "10.869",
+      "our": "9.138",
+      "gm": "1.20",
+      "s4": "1.19",
+      "sha": "ed5c8afedcddcbbd"
+    },
+    "C-HASH-1024": {
+      "ref": "369.855",
+      "opt": "11.709",
+      "our": "8.525",
+      "gm": "1.38",
+      "s4": "1.37",
+      "sha": "fda0e8efa1205d88"
+    }
+  },
+  "method": "Elapsed nanoseconds per byte at 1024-byte input; reference-vs-official sampled separately from official-vs-CryptoCode. GM is the three-round eight-size geometric mean. See ZIP results for raw data.",
+  "api": "Both delivery libraries support 512 and 1024 output bits. The current report 1024 binary rejects 512 output, as documented in the ZIP.",
+  "previous_website_records": [
+    {
+      "instance": "C-HASH-1024",
+      "algorithm": "C-HASH",
+      "id": "hash-03",
+      "digest_bits": "1024",
+      "form": "AVX2 C",
+      "ref": "684.09",
+      "opt": "21.73",
+      "our": "15.63",
+      "s4": "1.39",
+      "gm": "1.38",
+      "sha": "fda0e8efa1205d88",
+      "zip": "instances/C-HASH-1024.zip",
+      "mb": 1.98,
+      "alg": "C-HASH",
+      "db": "1024",
+      "audit_n": 4,
+      "legacy_before_cap": {
+        "ref": "675.48",
+        "opt": "21.80",
+        "our": "17.91",
+        "s4": "1.22",
+        "gm": "1.20",
+        "sha": "71a21553ebdcf9eb",
+        "zip": "instances/C-HASH-1024.zip",
+        "mb": 1.86
+      },
+      "metric_basis": "TSC ticks/B",
+      "generation_label": "REF+KAT-only",
+      "provenance_uri": "data/cap/C-HASH-1024.json",
+      "cap_batch": "20261124-02"
+    },
+    {
+      "instance": "C-HASH-512",
+      "algorithm": "C-HASH",
+      "id": "hash-03",
+      "digest_bits": "512",
+      "form": "AVX2 C",
+      "ref": "801.21",
+      "opt": "25.23",
+      "our": "21.16",
+      "s4": "1.19",
+      "gm": "1.19",
+      "sha": "9b4678d04c0c72e7",
+      "zip": "instances/C-HASH-512.zip",
+      "mb": 1.56,
+      "alg": "C-HASH",
+      "db": "512",
+      "audit_n": 4
+    }
+  ]
+}
