@@ -1,0 +1,110 @@
+{
+  "algorithm": "Iphe",
+  "version": "1.0.0",
+  "archive": "instances/Iphe-1.0.0.zip",
+  "archive_sha256": "c98a0da46e2d75daa386368ceb99c109c7485422a50c5b03497d9ec4f223595e",
+  "instances": {
+    "Iphe-512": {
+      "ref": "13.358",
+      "opt": "3.245",
+      "our": "1.936",
+      "gm": "1.84",
+      "s4": "1.68",
+      "sha": "a8ee7e2c70e87576"
+    },
+    "Iphe-768": {
+      "ref": "15.483",
+      "opt": "3.625",
+      "our": "2.041",
+      "gm": "1.92",
+      "s4": "1.78",
+      "sha": "e93b3bcd6b25991c"
+    },
+    "Iphe-1024": {
+      "ref": "19.923",
+      "opt": "3.922",
+      "our": "2.943",
+      "gm": "1.45",
+      "s4": "1.33",
+      "sha": "9aee5f1a6673d60d"
+    }
+  },
+  "method": "Elapsed nanoseconds per byte at 1024-byte input; reference-vs-official sampled separately from official-vs-CryptoCode. GM is the three-round eight-size geometric mean. See ZIP results for raw data.",
+  "previous_website_records": [
+    {
+      "instance": "Iphe-512",
+      "algorithm": "Iphe",
+      "id": "hash-12",
+      "digest_bits": "512",
+      "form": "AVX2 C",
+      "ref": "56.68",
+      "opt": "7.12",
+      "our": "4.14",
+      "s4": "1.72",
+      "gm": "1.93",
+      "sha": "a8ee7e2c70e87576",
+      "zip": "instances/Iphe-512.zip",
+      "mb": 1.75,
+      "alg": "Iphe",
+      "db": "512",
+      "audit_n": 4,
+      "legacy_before_cap": {
+        "ref": "27.44",
+        "opt": "7.00",
+        "our": "6.68",
+        "s4": "1.05",
+        "gm": "1.05",
+        "sha": "0acaea1a216fba3d",
+        "zip": "instances/Iphe-512.zip",
+        "mb": 1.58
+      },
+      "metric_basis": "TSC ticks/B",
+      "generation_label": "REF+KAT-only",
+      "provenance_uri": "data/cap/Iphe-512.json"
+    },
+    {
+      "instance": "Iphe-768",
+      "algorithm": "Iphe",
+      "id": "hash-12",
+      "digest_bits": "768",
+      "alg": "Iphe",
+      "db": "768",
+      "form": "AVX2 C",
+      "ref": "62.06",
+      "opt": "7.93",
+      "our": "4.69",
+      "s4": "1.69",
+      "gm": "1.86",
+      "sha": "e93b3bcd6b25991c",
+      "zip": "instances/Iphe-768.zip",
+      "mb": 1.82,
+      "audit_n": 3,
+      "metric_basis": "TSC ticks/B",
+      "generation_label": "REF+KAT-only",
+      "provenance_uri": "data/cap/Iphe-768.json",
+      "lineage": "fresh"
+    },
+    {
+      "instance": "Iphe-1024",
+      "algorithm": "Iphe",
+      "id": "hash-12",
+      "digest_bits": "1024",
+      "alg": "Iphe",
+      "db": "1024",
+      "form": "AVX2 C",
+      "ref": "77.62",
+      "opt": "9.03",
+      "our": "6.78",
+      "s4": "1.33",
+      "gm": "1.44",
+      "sha": "9aee5f1a6673d60d",
+      "zip": "instances/Iphe-1024.zip",
+      "mb": 1.97,
+      "audit_n": 3,
+      "metric_basis": "TSC ticks/B",
+      "generation_label": "REF+KAT-only",
+      "provenance_uri": "data/cap/Iphe-1024.json",
+      "lineage": "fresh"
+    }
+  ]
+}
