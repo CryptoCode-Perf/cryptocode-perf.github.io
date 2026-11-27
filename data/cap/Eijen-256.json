@@ -1,0 +1,171 @@
+{
+  "instance": "Eijen-256",
+  "classification": "cross-instance transfer; diagnostic, not a verified CAP win",
+  "candidate_source_sha256": "df4518be51a30f3a461b79dcbf7e7db9ad377daa8af18e45a7485431cedaeae6",
+  "candidate_so_sha256": "33feb84090ea4afba0c017244c419d1a47d896fde5d4fbc61c894a2ffddf103f",
+  "candidate_origin": "Eijen-512 candidate_02, transferred to target instance without further source generation",
+  "opt_over_candidate": {
+    "status": "completed_diagnostic_only",
+    "plan_sha256": "d92ab8c0e4f3b7fba73f12bb02bb190e5acad71272a44f78dd8cb7409c6768f2",
+    "gate_id": "5ca4a17d00f34ea9bb6c3fb7f2490b54",
+    "diagnostic_only": true,
+    "rounds": [
+      {
+        "ratios": {
+          "32": 1.42381438850824,
+          "128": 1.405690559602385,
+          "512": 1.4425208718232132,
+          "1024": 1.4298067207828593,
+          "4096": 1.4607418955414002,
+          "8192": 1.4244721655084245,
+          "16384": 1.4773320641625463,
+          "65536": 1.4503721138353618
+        },
+        "report_sha256": "0680050ccf81586cc35d84d0fcedfc265c3b19325aa6e020e600e76a80d30c90",
+        "eight_gm": 1.439182751584554
+      },
+      {
+        "ratios": {
+          "32": 1.3932160643663747,
+          "128": 1.3729181002743642,
+          "512": 1.39678833772918,
+          "1024": 1.3715871985980894,
+          "4096": 1.407534359058903,
+          "8192": 1.4101895353423506,
+          "16384": 1.4592506339544047,
+          "65536": 1.4218090724354788
+        },
+        "report_sha256": "90d74ab9c9838f4b29f3b5b342cc6eef0e7690cc994a5d6c52d737c9c9d89444",
+        "eight_gm": 1.403914304184067
+      },
+      {
+        "ratios": {
+          "32": 1.3428800013999536,
+          "128": 1.3288220067576269,
+          "512": 1.3160731184397265,
+          "1024": 1.32836258112181,
+          "4096": 1.3408541550153699,
+          "8192": 1.3395999243529413,
+          "16384": 1.3204783234472484,
+          "65536": 1.3142173558791512
+        },
+        "report_sha256": "979f798ade3e20c2864190b9d49250134776d1a68d43f6e78ff12b6c1dd8cf83",
+        "eight_gm": 1.328868402926595
+      }
+    ],
+    "eight_length_gm": 1.3898870436797106
+  },
+  "previous_website_over_candidate": {
+    "status": "completed_diagnostic_only",
+    "plan_sha256": "b8daf4e981497cd6fd6d56744c4cd4017e05e0e7170b1e92a4fbd056b9cd54a8",
+    "gate_id": "ae462072657a4956adf134dcdd84984e",
+    "runs": [
+      {
+        "round": 1,
+        "ratios": {
+          "32": 1.076391991895644,
+          "128": 1.089723408573453,
+          "512": 1.1469212734016991,
+          "1024": 1.0856165848052197,
+          "4096": 1.1463563073991128,
+          "8192": 1.1029633621872004,
+          "16384": 1.09209651061884,
+          "65536": 1.0970597792046912
+        },
+        "gm": 1.1043547537576321
+      },
+      {
+        "round": 2,
+        "ratios": {
+          "32": 1.1052535854107781,
+          "128": 1.0952446328854442,
+          "512": 1.0843197460087715,
+          "1024": 1.082048790073418,
+          "4096": 1.1024280390761068,
+          "8192": 1.0995129558637626,
+          "16384": 1.0927875431355858,
+          "65536": 1.098765022896881
+        },
+        "gm": 1.0950174875937235
+      },
+      {
+        "round": 3,
+        "ratios": {
+          "32": 1.0832806375665904,
+          "128": 1.0850190180993975,
+          "512": 1.0734312644308204,
+          "1024": 1.0836169028202844,
+          "4096": 1.0911888427279244,
+          "8192": 1.0873267023662312,
+          "16384": 1.08510776760041,
+          "65536": 1.0897862272252534
+        },
+        "gm": 1.0848328120423338
+      }
+    ],
+    "eight_gm": 1.094705980785743,
+    "limitations": "diagnostic incumbent website binary vs selected cross-instance transfer candidate, not replacement OPT score"
+  },
+  "correctness": {
+    "source_instance": "512",
+    "status": "passed",
+    "performance_measured": false,
+    "differential": {
+      "passed": true,
+      "message_cases": 8329,
+      "seed": 20261118,
+      "checks": [
+        "all_bit_lengths_0_to_8192",
+        "partial_bits",
+        "unaligned_offsets_0_to_31",
+        "input_immutability",
+        "output_guards",
+        "in_place",
+        "NULL_empty"
+      ],
+      "contract": {
+        "require_in_place": true,
+        "require_invalid_argument_equivalence": false,
+        "require_null_empty_equivalent": true
+      },
+      "transcript_sha256": "e72ce1c1dec60c7f5cf0c1af5bd6feef23bc373a989870cbef620459271e05a1"
+    },
+    "sanitizer": {
+      "passed": true,
+      "message_cases": 512,
+      "tools": [
+        "ASan",
+        "UBSan"
+      ],
+      "not_a_proof": true,
+      "reference_only_leak_suppression": "ReferenceHash",
+      "candidate_leak_detection": "enabled"
+    },
+    "kats": {
+      "KAT_2_12_Eijen-256.txt": "ae96fba851ae851a91718eeedcac88f6fc5305ee1d6ea74ccdc5ecd54baedb18",
+      "KAT_2_23_Eijen-256.txt": "e46d9b6bc8651e14028b7a67ae9f37d88647be6e656dc9b2471e7af2949d21b8",
+      "KAT_2_33_Eijen-256.txt": "10a4d3d38e35850de70b5cae69f6a1a18ec57347620f81d99e979706ab74d3be",
+      "KAT_Loop_Eijen-256.txt": "7d5149de0bcf676cbb5c92abaf0551786fd578358feac8667772b0d5355cc36b"
+    }
+  },
+  "helper": {
+    "status": "passed",
+    "comparison": {
+      "implemented_helper_equivalence": true,
+      "hash4_reference": "reference_unsupported",
+      "hash4_candidate": "unavailable_not_validated",
+      "all_header_declared_API_equivalence": false,
+      "mandatory_records": 674
+    },
+    "plan_sha256": "1fbb69acd2df423ee437af7e8ad3f842eccbcd318e0929b35d041bfe914d8c3e"
+  },
+  "metric_note": "ratios use elapsed ns; TSC ticks/B are informational proxies, hardware core cycles unavailable",
+  "limitations": [
+    "historical timing identity reconciliation and independent source/publishing audit not complete",
+    "existing v1 scanner returned continue_existing_record; user requested diagnostic timing",
+    "gate released, WSL descendant cleanup not proven",
+    "not a verified source win or formal publication qualification",
+    "no reference timing measured in this run"
+  ],
+  "legacy_archive": "instances/Eijen-256-legacy-pre-cap.zip"
+}
