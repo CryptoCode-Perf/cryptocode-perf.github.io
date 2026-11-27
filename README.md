@@ -1,4 +1,4 @@
-# NGCC Hash Optimization / CAP
+# CryptoCode-Perf Hash Optimization / CAP
 
 Static instance-delivery website: `index.html`, `styles.css`, `app.js`,
 `data/instances.json`, and downloadable archives under `instances/`.
