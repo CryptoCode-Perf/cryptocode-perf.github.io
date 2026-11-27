@@ -1,6 +1,6 @@
 {
   "generated": "2026-11-24",
-  "n": 73,
+  "n": 72,
   "instances": [
     {
       "instance": "AFS-TrEDM-1024",
@@ -1420,38 +1420,6 @@
       "generation_label": "REF+KAT-only",
       "provenance_uri": "data/cap/AFS-TrEDM-512.json",
       "lineage": "own-history continuation"
-    },
-    {
-      "instance": "WChain-V1-512",
-      "algorithm": "WChain",
-      "id": "hash-34",
-      "digest_bits": "512",
-      "form": "AVX2 C",
-      "ref": "4.890",
-      "opt": "6.461",
-      "our": "5.418",
-      "s4": "1.15",
-      "gm": "1.15",
-      "sha": "e2193b5f6067d706",
-      "zip": "instances/WChain-V1-512.zip",
-      "mb": 1.51,
-      "alg": "WChain",
-      "db": "512",
-      "audit_n": 4,
-      "legacy_before_cap": {
-        "ref": "5.0615",
-        "opt": "4.8726",
-        "our": "4.7177",
-        "s4": "1.03",
-        "gm": "1.03",
-        "sha": "919182184c5140",
-        "zip": "instances/WChain-V1-512.zip",
-        "mb": "1.50"
-      },
-      "metric_basis": "TSC ticks/B",
-      "generation_label": "REF+KAT-only / own-history continuation",
-      "provenance_uri": "data/cap/WChain-V1-512.json",
-      "cap_batch": "20261127-wchain-01"
     }
   ]
 }
