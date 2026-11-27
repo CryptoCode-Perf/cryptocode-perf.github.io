@@ -527,23 +527,33 @@
       "db": "768",
       "audit_n": 4
     },
-    {
+{
       "instance": "MoFang-512",
       "algorithm": "MoFang",
       "id": "hash-19",
       "digest_bits": "512",
       "form": "AVX2 C",
-      "ref": "10.96",
-      "opt": "7.23",
-      "our": "2.67",
-      "s4": "2.71",
-      "gm": "2.81",
-      "sha": "3b5e5a69703c2758",
+      "ref": "5.793",
+      "opt": "3.171",
+      "our": "1.080",
+      "s4": "2.94",
+      "gm": "2.87",
+      "sha": "252c64a86a682c0e",
       "zip": "instances/MoFang-512.zip",
-      "mb": 1.56,
+      "mb": 0.03,
       "alg": "MoFang",
       "db": "512",
-      "audit_n": 4
+      "audit_n": 4,
+      "cap_batch": "20261127-mofang-512-continuation-c04",
+      "cap_provenance": "data/cap/MoFang-512.json",
+      "legacy_before_cap": {
+        "ref": "10.96",
+        "opt": "7.23",
+        "our": "2.67",
+        "s4": "2.71",
+        "gm": "2.81",
+        "sha": "3b5e5a69703c2758"
+      }
     },
     {
       "instance": "MoFang-256",

@@ -1,0 +1,125 @@
+{
+ "instance": "MoFang-512",
+ "algorithm": "MoFang",
+ "id": "hash-19",
+ "digest_bits": 512,
+ "channel": "MoFang-512-DSH-Continuation-C04-20261127",
+ "classification": "multi-round continuation; verified win above the source-site record",
+ "candidate_source_sha256": "252c64a86a682c0e567a5f2920e6c0eb83ca294540f5d5d3fc8956605beefec0",
+ "candidate_origin": "MoFang-512 continuation seed C04 (own prior candidate lineage, no OPT exposure)",
+ "measurement": {
+  "unit": "ns per byte",
+  "rows": {
+   "32": {
+    "ref_ns_per_byte": 24.8446,
+    "opt_ns_per_byte": 13.4846,
+    "our_ns_per_byte": 4.9111,
+    "opt_over_our": 2.7457,
+    "ref_over_our": 5.0589
+   },
+   "128": {
+    "ref_ns_per_byte": 6.1784,
+    "opt_ns_per_byte": 3.386,
+    "our_ns_per_byte": 1.2434,
+    "opt_over_our": 2.7231,
+    "ref_over_our": 4.9688
+   },
+   "512": {
+    "ref_ns_per_byte": 5.9201,
+    "opt_ns_per_byte": 3.1777,
+    "our_ns_per_byte": 1.1079,
+    "opt_over_our": 2.8683,
+    "ref_over_our": 5.3435
+   },
+   "1024": {
+    "ref_ns_per_byte": 5.7934,
+    "opt_ns_per_byte": 3.1714,
+    "our_ns_per_byte": 1.0803,
+    "opt_over_our": 2.9358,
+    "ref_over_our": 5.363
+   },
+   "4096": {
+    "ref_ns_per_byte": 5.1905,
+    "opt_ns_per_byte": 2.8529,
+    "our_ns_per_byte": 0.9769,
+    "opt_over_our": 2.9204,
+    "ref_over_our": 5.3134
+   },
+   "8192": {
+    "ref_ns_per_byte": 5.0722,
+    "opt_ns_per_byte": 2.81,
+    "our_ns_per_byte": 0.9576,
+    "opt_over_our": 2.9343,
+    "ref_over_our": 5.2965
+   },
+   "16384": {
+    "ref_ns_per_byte": 5.1598,
+    "opt_ns_per_byte": 2.7992,
+    "our_ns_per_byte": 0.9683,
+    "opt_over_our": 2.891,
+    "ref_over_our": 5.3289
+   },
+   "65536": {
+    "ref_ns_per_byte": 5.2233,
+    "opt_ns_per_byte": 2.8243,
+    "our_ns_per_byte": 0.957,
+    "opt_over_our": 2.9511,
+    "ref_over_our": 5.4578
+   }
+  },
+  "gm_opt_over_our": 2.869979,
+  "s4_opt_over_our": 2.9358,
+  "performance_flags": "-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra",
+  "pin": "taskset -c 0",
+  "rounds": 3,
+  "samples_per_size": 101,
+  "harness": "C:/CAP/staging/engine_refkat_no_shared_prune/guide_bench.c"
+ },
+ "baseline": {
+  "reference": "input/CryptHash_AlgorithmInstance.c, untouched original",
+  "official_optimized": "MoFang/Implementations/Optimized_Implementation/MoFang-512/CryptHash_AlgorithmInstance.c, exact archive bytes sha256 e7004a05cd282270a95b5ce791fc9f4746205e0fef1395cd963a114ca9904eaa (archive orig.zip sha256 dfdd7dd54361fb09e6d0bc47ae6245a9f992f284c56b04ff55d528e2339c9acc), plus a documented rotl(x,0) guard",
+  "official_opt_is_genuine": true,
+  "official_over_reference": 1.83
+ },
+ "verification": {
+  "correctness": "8329 differential cases + ASan/UBSan + 4 KATs, status passed",
+  "three_variant_first": {
+   "gm_candidate_over_official": 2.898,
+   "gm_candidate_over_reference": 5.0252,
+   "gm_official_over_reference": 1.734
+  },
+  "three_variant_retest": {
+   "gm_candidate_over_official": 2.8697,
+   "gm_candidate_over_reference": 5.2527,
+   "gm_official_over_reference": 1.8304,
+   "round_gms": [
+    2.7933,
+    2.8533,
+    2.9649
+   ]
+  }
+ },
+ "source_record": {
+  "site_gm": 2.8119168696261356,
+  "site_row": {
+   "ref": "10.96",
+   "opt": "7.23",
+   "our": "2.67",
+   "s4": "2.71",
+   "gm": "2.81",
+   "sha": "3b5e5a69703c2758"
+  },
+  "margin_pct": 2.06,
+  "beats_source_record": true
+ },
+ "delivery": {
+  "zip": "instances/MoFang-512.zip",
+  "zip_sha256": "322914dcdcb3becf141371bf96c3fd87c5d45c0b4a9c25cf2974b89ef16d2038",
+  "zip_bytes": 27019
+ },
+ "notes": [
+  "official OPT source origin verified against the archive member list (ORIGIN_MANIFEST.json)",
+  "same-flags three-variant measured reference, official OPT and candidate inside one guide.run per round",
+  "first run and independent retest both exceed the source-site record; a sibling candidate C03 was rejected because its retest fell below the record"
+ ]
+}
