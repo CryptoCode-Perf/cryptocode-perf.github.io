@@ -1,0 +1,265 @@
+{
+  "instance": "Eijen-512",
+  "task": "eijen512-routebound-compliant-20261126-v1",
+  "candidate": "candidate_02",
+  "generation_label": "REF+KAT-only / own-history continuation",
+  "source_audit_sha256": "f1404b38b23489ec65a367a280eca9e9652e83d55788d576ef54d505fe8a21d7",
+  "archive_sha256": "c505ca14266b6857f0acf4d34dca584db7a4f9a65299c1f62f8afa4c9d6b71e8",
+  "metric_basis": "TSC ticks/B; not hardware core cycles",
+  "hardware_core_cpb": null,
+  "table_metrics_scope": "Historical original OPT and candidate: three repetitions, pooled TSC/byte across eight sizes; GM is geometric mean of three eight-size OPT/candidate wall-time ratios.",
+  "historical_opt_over_candidate_1024_geomean": 1.1883099188006268,
+  "site_over_candidate_1024_geomean_separate_comparison": 1.07,
+  "eight_length_three_round_opt_over_candidate_geomean": 1.1756508094432365,
+  "historical_audit": {
+    "passed": true,
+    "task_id": "eijen512-routebound-compliant-20261126-v1",
+    "instance": "Eijen-512",
+    "generator_kind": "external_harness",
+    "harness": "DSH-headless",
+    "model": "hy4flash-free",
+    "calls_reported_by_harness": 11,
+    "selected": "candidate_02",
+    "candidate_audit": [
+      {
+        "candidate": "candidate_01",
+        "status": "validated",
+        "sha256": "8669b0fa525e7d06d69be87876527b0036d8ab3756c96e738f2b2ef3ebfdbda6"
+      },
+      {
+        "candidate": "candidate_02",
+        "status": "validated",
+        "sha256": "ebdc5d9066389652b94474317c13dfd2e6021642100b33b2ff18abbc23f26298"
+      }
+    ],
+    "primary_bytes": 1024,
+    "formal_opt_over_our_1run": 1.192063403321657,
+    "replication": {
+      "status": "completed",
+      "source_session": "/mnt/c/CAP/lab/runs/eijen512-routebound-compliant-20261126-v1",
+      "repetitions": 3,
+      "primary_bytes": 1024,
+      "results": [
+        {
+          "invocation": 1,
+          "primary_mean_speedups": {
+            "reference_o2": 2.9039710711179243,
+            "reference_same": 1.1904933282353056,
+            "official_optimized": 1.210697531947
+          },
+          "formal_status": "timing_complete_cycles_unavailable"
+        },
+        {
+          "invocation": 2,
+          "primary_mean_speedups": {
+            "reference_same": 1.1117419538739526,
+            "official_optimized": 1.136506624656626,
+            "reference_o2": 2.68175702724303
+          },
+          "formal_status": "timing_complete_cycles_unavailable"
+        },
+        {
+          "invocation": 3,
+          "primary_mean_speedups": {
+            "official_optimized": 1.2194992510182,
+            "reference_o2": 2.894030078232702,
+            "reference_same": 1.2141514069047659
+          },
+          "formal_status": "timing_complete_cycles_unavailable"
+        }
+      ],
+      "summary": {
+        "reference_o2": {
+          "ratios": [
+            2.9039710711179243,
+            2.68175702724303,
+            2.894030078232702
+          ],
+          "geometric_mean": 2.824695151612799,
+          "minimum": 2.68175702724303,
+          "all_three_above_1_01": true
+        },
+        "reference_same": {
+          "ratios": [
+            1.1904933282353056,
+            1.1117419538739526,
+            1.2141514069047659
+          ],
+          "geometric_mean": 1.171299441193784,
+          "minimum": 1.1117419538739526,
+          "all_three_above_1_01": true
+        },
+        "official_optimized": {
+          "ratios": [
+            1.210697531947,
+            1.136506624656626,
+            1.2194992510182
+          ],
+          "geometric_mean": 1.1883099188006268,
+          "minimum": 1.136506624656626,
+          "all_three_above_1_01": true
+        }
+      },
+      "claim_limit": "Three exploratory independent invocations in same machine session; not a population confidence interval",
+      "wall_budget": "post-selection evaluator work, common to all arms; outside generation cap",
+      "cycles_limit": "Each invocation reports hardware cycles availability independently; no TSC substitution"
+    },
+    "replication_opt_over_our_geomean": 1.1883099188006268,
+    "replication_all3_over_1_01": true,
+    "formal_status": "timing_complete_cycles_unavailable",
+    "long_kat": "passed",
+    "formal_reports_audited": [
+      "confirmation\\formal\\report.json",
+      "confirmation\\formal\\report.json",
+      "formal\\report.json",
+      "formal\\report.json",
+      "formal\\report.json",
+      "formal\\report.json",
+      "initial_reference_formal\\report.json",
+      "measurements\\candidate_01\\report.json",
+      "measurements\\candidate_01\\report.json",
+      "measurements\\candidate_02\\report.json",
+      "measurements\\candidate_02\\report.json"
+    ],
+    "guide_profile_sha256": "5e1f264ab5e6b3bc2bd08a40010e87fe59471da711e9b79c6f6724a5dafa6899",
+    "trace_sha256": "e1c6e980768b1818a2911bba3f369fe73b4f80decfaeaad37a0d25ebb7c943ac",
+    "trace_path": "C:\\CAP\\handoff\\active\\eijen512-routebound-compliant-20261126-v1\\trace\\interaction_log.md",
+    "tsc_ticks_per_byte_estimate": {
+      "metric": "TSC ticks/byte estimate; not hardware core cycles",
+      "samples_per_variant_size": 303,
+      "rows": [
+        {
+          "bytes": 32,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": null,
+          "tsc_ticks_per_byte": {
+            "our": 12.682728474682447,
+            "OPT": 14.876082052098392,
+            "reference_same": 14.52090987277826,
+            "reference_o2": 34.12577758134344
+          },
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "bytes": 128,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": null,
+          "tsc_ticks_per_byte": {
+            "our": 3.1392045194166154,
+            "OPT": 3.6663558144776194,
+            "reference_same": 3.587012031290893,
+            "reference_o2": 8.512943595156198
+          },
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "bytes": 512,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": null,
+          "tsc_ticks_per_byte": {
+            "our": 2.2318001580316627,
+            "OPT": 2.6367546796012076,
+            "reference_same": 2.608342741975718,
+            "reference_o2": 6.237474649259366
+          },
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "bytes": 1024,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": null,
+          "tsc_ticks_per_byte": {
+            "our": 2.189223560169561,
+            "OPT": 2.600183214684925,
+            "reference_same": 2.562979657264462,
+            "reference_o2": 6.181072291761319
+          },
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "bytes": 4096,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": null,
+          "tsc_ticks_per_byte": {
+            "our": 2.093913014572452,
+            "OPT": 2.452096636932675,
+            "reference_same": 2.451128138173925,
+            "reference_o2": 5.889471491571307
+          },
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "bytes": 8192,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": null,
+          "tsc_ticks_per_byte": {
+            "our": 2.051105289175959,
+            "OPT": 2.4114210432512135,
+            "reference_same": 2.392722954451054,
+            "reference_o2": 5.789843024200338
+          },
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "bytes": 16384,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": null,
+          "tsc_ticks_per_byte": {
+            "our": 2.0400258345965896,
+            "OPT": 2.3999549752414815,
+            "reference_same": 2.3945476245565382,
+            "reference_o2": 5.79783328216855
+          },
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "bytes": 65536,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": null,
+          "tsc_ticks_per_byte": {
+            "our": 2.037769530866012,
+            "OPT": 2.380679399660318,
+            "reference_same": 2.3748816405192463,
+            "reference_o2": 5.702561262023725
+          },
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        }
+      ],
+      "raw_csv_sha256": {
+        "evidence/replication/repeat_01/delivered/raw.csv": "5cf15c6d1e59d4cc3e515cf7c7cf2a3a5b496076c1541e82d4c8f22f5b96fbe1",
+        "evidence/replication/repeat_01/official_optimized/raw.csv": "288ebf0e813a145da405bd220352f11a1978ee0b91a58b2796ecd1111d77f608",
+        "evidence/replication/repeat_01/reference_same/raw.csv": "8a3eee9e12a0b119fb90d9851a7b975bfcfbc95dbb898cc004d0873419db0cba",
+        "evidence/replication/repeat_01/reference_o2/raw.csv": "169fa7619034a350c65e270965250e1c47159aa18e0326531261cdf71ca3a3da",
+        "evidence/replication/repeat_02/delivered/raw.csv": "f1051d45ca956ba3c4cc70fc0a4c0ec31a91ae07fb1120990d682b50c9f81f11",
+        "evidence/replication/repeat_02/official_optimized/raw.csv": "ed94f7f68adc75c6f9a06b10e1b1af4d3d5b7913607e5770ff51df4f43469122",
+        "evidence/replication/repeat_02/reference_same/raw.csv": "0e9ab7f002557c92990b4cc20c9439a14bf3993fef798f096ecad868c8f7a5f6",
+        "evidence/replication/repeat_02/reference_o2/raw.csv": "eaae4df9a64f08441d678619facb96eb045612c0ea2728804204f4cb38ba19e2",
+        "evidence/replication/repeat_03/delivered/raw.csv": "c038f4702ee349857505ecf1e8e65a5d3aaa6dd114ff4ca29541e81f42fe3d71",
+        "evidence/replication/repeat_03/official_optimized/raw.csv": "e029a8ba8f4646289016ae5aaca87700f78df27217f55a23560fed1f2d675f81",
+        "evidence/replication/repeat_03/reference_same/raw.csv": "777726b87072583b96531e45b5e44123313ae5997d8f5b7fab265c3ea435826a",
+        "evidence/replication/repeat_03/reference_o2/raw.csv": "9c6c0795ba8b68feedfb37234315c913cdfa12d10037d65c6ae611b522bad986"
+      },
+      "limitations": [
+        "TSC ticks are not hardware core cycles; hardware_CPB is null.",
+        "Three runs are same-session exploratory repetitions, not a population confidence interval."
+      ]
+    },
+    "our_tsc_ticks_per_byte_1024": 2.189223560169561,
+    "opt_tsc_ticks_per_byte_1024": 2.600183214684925,
+    "our_hardware_core_cycle_cpb_1024": null,
+    "opt_hardware_core_cycle_cpb_1024": null,
+    "scope_limits": [
+      "Harness/model call count is recorded from the external harness trace and operator metadata.",
+      "Prior model exposure is not independently known.",
+      "Constant-time behavior is not assessed.",
+      "Hardware core-cycle CPB is unavailable unless PMU evidence is present."
+    ]
+  },
+  "verification": {
+    "status": "passed",
+    "clean_rebuild": "passed",
+    "long_kat": "passed",
+    "independent_source_audit_passed": true
+  },
+  "limits": "Source identity is compared to declared own lineage, not all external code. Timing is existing evidence, not a new measurement."
+}
