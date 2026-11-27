@@ -1,0 +1,77 @@
+{
+  "algorithm": "JuziHash",
+  "version": "1.0.0",
+  "archive": "instances/JuziHash-1.0.0.zip",
+  "archive_sha256": "cd71cbe25da2db75dc47ad1f740f6a19ed60758431e7390183602c88db847003",
+  "instances": {
+    "JuziHash-512": {
+      "ref": "57.176",
+      "opt": "3.781",
+      "our": "2.425",
+      "gm": "1.56",
+      "s4": "1.56",
+      "sha": "7cb46cdc560d9d19"
+    },
+    "JuziHash-1024": {
+      "ref": "58.846",
+      "opt": "3.853",
+      "our": "3.168",
+      "gm": "1.21",
+      "s4": "1.22",
+      "sha": "18ade378b81f94ba"
+    }
+  },
+  "method": "Elapsed nanoseconds per byte at 1024-byte input; reference-vs-official sampled separately from official-vs-CryptoCode. GM is the three-round eight-size geometric mean. See ZIP results for raw data.",
+  "previous_website_records": [
+    {
+      "instance": "JuziHash-1024",
+      "algorithm": "JuziHash",
+      "id": "hash-13",
+      "digest_bits": "1024",
+      "form": "AVX2 C",
+      "ref": "220.23",
+      "opt": "8.02",
+      "our": "6.60",
+      "s4": "1.22",
+      "gm": "1.21",
+      "sha": "18ade378b81f94ba",
+      "zip": "instances/JuziHash-1024.zip",
+      "mb": 1.86,
+      "alg": "JuziHash",
+      "db": "1024",
+      "audit_n": 4
+    },
+    {
+      "instance": "JuziHash-512",
+      "algorithm": "JuziHash",
+      "id": "hash-13",
+      "digest_bits": "512",
+      "form": "AVX2 C",
+      "ref": "232.34",
+      "opt": "7.85",
+      "our": "4.96",
+      "s4": "1.58",
+      "gm": "1.57",
+      "sha": "7cb46cdc560d9d19",
+      "zip": "instances/JuziHash-512.zip",
+      "mb": 1.82,
+      "alg": "JuziHash",
+      "db": "512",
+      "audit_n": 4,
+      "legacy_before_cap": {
+        "ref": "277.39",
+        "opt": "10.44",
+        "our": "8.57",
+        "s4": "1.22",
+        "gm": "1.22",
+        "sha": "21a72d5ba224b8d9",
+        "zip": "instances/JuziHash-512.zip",
+        "mb": 1.56
+      },
+      "metric_basis": "TSC ticks/B",
+      "generation_label": "REF+KAT-only",
+      "provenance_uri": "data/cap/JuziHash-512.json",
+      "cap_batch": "20261125-01"
+    }
+  ]
+}
