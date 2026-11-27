@@ -1,0 +1,90 @@
+{
+  "algorithm": "AXIS",
+  "version": "1.0.0",
+  "archive": "instances/AXIS-1.0.0.zip",
+  "archive_sha256": "417b00f332d0590e3b5b94f4d92afb62e3b342de3a367566aa19be5c4e0a3310",
+  "instances": {
+    "AXIS-512": {
+      "ref": "19.926",
+      "opt": "10.180",
+      "our": "3.218",
+      "gm": "2.39",
+      "s4": "3.16",
+      "sha": "31151f91b94341ce"
+    },
+    "AXIS-768": {
+      "ref": "31.865",
+      "opt": "15.082",
+      "our": "5.061",
+      "gm": "2.53",
+      "s4": "2.98",
+      "sha": "31151f91b94341ce"
+    },
+    "AXIS-1024": {
+      "ref": "30.190",
+      "opt": "17.784",
+      "our": "3.683",
+      "gm": "3.81",
+      "s4": "4.83",
+      "sha": "a62974ab7e42b46b"
+    }
+  },
+  "method": "Elapsed nanoseconds per byte at 1024-byte input; reference-vs-official sampled separately from official-vs-CryptoCode. GM is the three-round eight-size geometric mean. See ZIP results for raw data.",
+  "compatibility": "axis_core_* streaming helpers are linked from the reference implementation and are not claimed to be the optimized one-shot code.",
+  "previous_website_records": [
+    {
+      "instance": "AXIS-1024",
+      "algorithm": "AXIS",
+      "id": "hash-02",
+      "digest_bits": "1024",
+      "form": "AVX2 C",
+      "ref": "74.82",
+      "opt": "27.34",
+      "our": "2.97",
+      "s4": "9.19",
+      "gm": "5.73",
+      "sha": "3a6485e771fc4b4f",
+      "zip": "instances/AXIS-1024.zip",
+      "mb": 1.86,
+      "alg": "AXIS",
+      "db": "1024",
+      "audit_n": 4
+    },
+    {
+      "instance": "AXIS-512",
+      "algorithm": "AXIS",
+      "id": "hash-02",
+      "digest_bits": "512",
+      "form": "AVX2 C",
+      "ref": "58.76",
+      "opt": "19.85",
+      "our": "8.53",
+      "s4": "2.33",
+      "gm": "1.83",
+      "sha": "8f4a4398db2b5c83",
+      "zip": "instances/AXIS-512.zip",
+      "mb": 1.57,
+      "alg": "AXIS",
+      "db": "512",
+      "audit_n": 4
+    },
+    {
+      "instance": "AXIS-768",
+      "algorithm": "AXIS",
+      "id": "hash-02",
+      "digest_bits": "768",
+      "form": "AVX2 C",
+      "ref": "100.80",
+      "opt": "24.42",
+      "our": "12.40",
+      "s4": "1.97",
+      "gm": "1.61",
+      "sha": "8f4a4398db2b5c83",
+      "zip": "instances/AXIS-768.zip",
+      "mb": 1.72,
+      "alg": "AXIS",
+      "db": "768",
+      "audit_n": 4
+    }
+  ]
+}
