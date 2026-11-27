@@ -1,18 +1,17 @@
-# CryptoCode-Perf Hash Optimization / CAP
+# CryptoCode-Perf
 
-Static instance-delivery website: `index.html`, `styles.css`, `app.js`,
-`data/instances.json`, and downloadable archives under `instances/`.
+The fastest hash implementations we currently offer, with performance comparisons,
+source downloads and reproducible verification.
 
-CAP records are integrated per instance only after correctness checks and a
-same-environment comparison with the previous site implementation and official
-OPT. `REF+KAT-only` identifies the audited generation-input contract; it does
-not assert that the model never encountered the algorithm during pretraining.
+The public table presents implementations without development-input or provenance
+categories. Each implementation is distributed as an independent package.
+Measurement data, KAT verification records and download archives are retained.
 
-The table distinguishes legacy cpB values, whose hardware-counter provenance
-requires review, from CAP TSC ticks/B. TSC ticks are not core CPU cycles.
-Each CAP record links to `data/cap/<official-instance-name>.json` and its ZIP
-contains source, a rebuild script, KAT verification, and audit evidence.
+Performance depends on processor, compiler options and message length. Preserve
+measurement units: TSC ticks/B is not core cycles/B; hardware-counter provenance
+for cpB* requires review. GM× compares against official optimized implementations
+across eight message lengths.
 
-The site is generated. Maintainers should use the isolated preview and
-single-writer integration workflow before synchronizing or publishing; direct
-manual table edits may be overwritten on a future build.
+When regenerating index.html, preserve this presentation: no Source column or
+REF+KAT-only badges. Keep measurement qualifications and verification instructions.
+Detailed records remain in data/cap/ and the downloadable archives.
