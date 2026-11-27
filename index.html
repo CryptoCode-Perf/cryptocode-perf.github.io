@@ -1,8 +1,8 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NGCC Hash Optimization — Instance Delivery & Reproduction</title><link rel="stylesheet" href="styles.css"></head><body><div class="wrap">
+<title>CryptoCode-Perf Hash Optimization — Instance Delivery & Reproduction</title><link rel="stylesheet" href="styles.css"></head><body><div class="wrap">
 <div style="float:right;margin-right:12px" class="small"><a href="#env">01</a> · <a href="#perf">02</a> · <a href="#archives">03</a> · <a href="#flow">04</a></div>
 <div class="masthead"><div style="float:right"><button class="langbtn sz" onclick="setLang(document.body.classList.contains('lang-en')?'zh':'en')">中 / EN</button></div>
-<h1><span class="zh">NGCC 哈希优化 · 实例交付与复现</span><span class="en">NGCC Hash Optimization · Instance Delivery &amp; Reproduction</span></h1>
+<h1><span class="zh">CryptoCode-Perf 哈希优化 · 实例交付与复现</span><span class="en">CryptoCode-Perf Hash Optimization · Instance Delivery &amp; Reproduction</span></h1>
 <p class="sub"><span class="zh">每一个优化实例独立成包，随包交付源码、头文件、预构建库、KAT、验证脚本与审计文档。</span><span class="en">Each optimized instance is packaged on its own, with source, header, prebuilt library, KAT, verifier and audit documents included.</span></p></div>
 
 <h2 id="env"><span class="h2n">01</span><span class="zh">构建与测量环境</span><span class="en">Build &amp; measurement environment</span></h2>
@@ -38,6 +38,6 @@ unzip &lt;instance&gt;.zip &amp;&amp; cd &lt;instance&gt;
 bash verify.sh                # 对该实例 KAT 全量 4097 条逐位比对</pre>
 <div class="notes"><ul><li><span class="zh"><code>verify.sh</code> 以预构建 <code>.so</code> 对 KAT 全量记录逐位比对，输出 <code>pass=True</code> 即表示复现成功；<code>README.md</code> 给出源码重建所需信息与 SHA-256，<code>audit/</code> 提供交付结果与优化模型。</span><span class="en"><code>verify.sh</code> compares the prebuilt <code>.so</code> against all KAT records bit-for-bit; <code>pass=True</code> means reproduced. <code>README.md</code> carries source-rebuild information and SHA-256; <code>audit/</code> provides delivery results and the optimization model.</span></li></ul></div>
 
-<footer><span class="zh">NGCC 哈希优化 · 实例交付与复现 — 数据生成于 2026-11-24。纯静态站点，可直接作为 GitHub Pages 发布。</span>
-<span class="en">NGCC Hash Optimization · Instance Delivery &amp; Reproduction — data generated 2026-11-24. Pure static site, publishable as GitHub Pages.</span></footer>
+<footer><span class="zh">CryptoCode-Perf 哈希优化 · 实例交付与复现 — 数据生成于 2026-11-24。纯静态站点，可直接作为 GitHub Pages 发布。</span>
+<span class="en">CryptoCode-Perf Hash Optimization · Instance Delivery &amp; Reproduction — data generated 2026-11-24. Pure static site, publishable as GitHub Pages.</span></footer>
 </div><script src="app.js"></script></body></html>
