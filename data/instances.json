@@ -801,8 +801,8 @@
       "s4": "1.08",
       "gm": "1.22",
       "sha": "0e13a5c27f6a2540",
-      "zip": "instances/QILIN-512.zip",
-      "mb": 1.57,
+      "zip": "instances/QILIN-1.0.0.zip",
+      "mb": 5.70,
       "alg": "QILIN",
       "db": "512",
       "audit_n": 4
@@ -819,8 +819,8 @@
       "s4": "1.10",
       "gm": "1.37",
       "sha": "0e13a5c27f6a2540",
-      "zip": "instances/QILIN-768.zip",
-      "mb": 1.72,
+      "zip": "instances/QILIN-1.0.0.zip",
+      "mb": 5.70,
       "alg": "QILIN",
       "db": "768",
       "audit_n": 4
@@ -837,8 +837,8 @@
       "s4": "1.12",
       "gm": "1.29",
       "sha": "0e13a5c27f6a2540",
-      "zip": "instances/QILIN-1024.zip",
-      "mb": 1.87,
+      "zip": "instances/QILIN-1.0.0.zip",
+      "mb": 5.70,
       "alg": "QILIN",
       "db": "1024",
       "audit_n": 4

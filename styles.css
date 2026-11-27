@@ -27,3 +27,6 @@ footer{padding:26px 0 0;color:var(--muted);font-size:12px;border-top:1px solid v
 /* Keep identifiers on the first visible row and shorten separators within groups. */
 #tb tr.group-continuation td.iid,#tb tr.group-continuation td.alg{color:transparent}
 #tb tr.group-open td.iid,#tb tr.group-open td.alg,#tb tr.group-open td:last-child{border-bottom-color:transparent}
+
+/* Shared algorithm archive appears on the first visible instance. */
+#tb tr.shared-archive-repeat td:last-child>*{visibility:hidden}
