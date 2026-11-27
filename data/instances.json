@@ -1,6 +1,6 @@
 {
   "generated": "2026-11-24",
-  "n": 73,
+  "n": 72,
   "instances": [
     {
       "instance": "AFS-TrEDM-1024",
@@ -1027,31 +1027,17 @@
       "id": "hash-11",
       "digest_bits": "768",
       "form": "AVX2 C",
-      "ref": "33.80",
-      "opt": "59.50",
-      "our": "24.96",
-      "s4": "2.38",
-      "gm": "2.39",
-      "sha": "5c8adb30ffffb18e",
+      "ref": "32.19",
+      "opt": "32.30",
+      "our": "27.96",
+      "s4": "1.16",
+      "gm": "1.15",
+      "sha": "54aab183816ca3b8",
       "zip": "instances/Garnet-768.zip",
-      "mb": 1.85,
+      "mb": 1.72,
       "alg": "Garnet",
       "db": "768",
-      "audit_n": 4,
-      "legacy_before_cap": {
-        "ref": "32.19",
-        "opt": "32.30",
-        "our": "27.96",
-        "s4": "1.16",
-        "gm": "1.15",
-        "sha": "54aab183816ca3b8",
-        "zip": "instances/Garnet-768.zip",
-        "mb": 1.72
-      },
-      "metric_basis": "TSC ticks/B",
-      "generation_label": "REF+KAT-only",
-      "provenance_uri": "data/cap/Garnet-768.json",
-      "cap_batch": "20261124-02"
+      "audit_n": 4
     },
     {
       "instance": "CHAMP-512",
@@ -1420,28 +1406,6 @@
       "generation_label": "REF+KAT-only",
       "provenance_uri": "data/cap/AFS-TrEDM-512.json",
       "lineage": "own-history continuation"
-    },
-    {
-      "instance": "Garnet-1024",
-      "algorithm": "Garnet",
-      "id": "hash-11",
-      "digest_bits": "1024",
-      "alg": "Garnet",
-      "db": "1024",
-      "audit_n": 3,
-      "ref": "23.43",
-      "opt": "40.98",
-      "our": "17.92",
-      "s4": "2.29",
-      "gm": "2.28",
-      "form": "AVX2 C",
-      "sha": "445b7fdf5e25b93b",
-      "zip": "instances/Garnet-1024.zip",
-      "mb": 1.99,
-      "metric_basis": "TSC ticks/B",
-      "generation_label": "REF+KAT-only",
-      "provenance_uri": "data/cap/Garnet-1024.json",
-      "cap_batch": "20261124-02"
     }
   ]
 }
