@@ -1,0 +1,61 @@
+{
+  "instance": "Pavelor-1024",
+  "task": "pavelor1024-hy4-generation-only-20261125",
+  "candidate": "candidate_02",
+  "generation_label": "REF+KAT-only / own-history continuation",
+  "known_corpus": true,
+  "model_pretraining_exposure": "unknown",
+  "hardware_CPB": null,
+  "source_sha256": {
+    "CryptHash_AlgorithmInstance.c": "500d0ce4dd0336541a230ebe02ed59093e2816ece9ad3ebcdc497e1324296f99"
+  },
+  "archive_sha256": "e7460a1b2d49df6e32142cd13abcd0d335e58f6aae1e1da8343098d33b86f104",
+  "metric_basis": "TSC ticks/B; not hardware core cycles",
+  "table_metrics_scope": "8 sizes x 101 samples x 3 rounds; OPT/candidate wall-time ratio",
+  "historical_opt_over_candidate_1024_geomean": "2.98",
+  "site_over_candidate_1024_geomean_separate_comparison": "2.96",
+  "limits": [
+    "Tests do not prove security or constant time.",
+    "TSC ticks/B is not hardware CPB."
+  ],
+  "verification": {
+    "status": "passed",
+    "candidate_so_sha256": "fe26e9672a4f70ca0a2b148072a11dabafff8a24f25cf5ead6df794a88b364c4",
+    "differential": {
+      "passed": true,
+      "message_cases": 8329,
+      "seed": 20261118,
+      "checks": [
+        "all_bit_lengths_0_to_8192",
+        "partial_bits",
+        "unaligned_offsets_0_to_31",
+        "input_immutability",
+        "output_guards",
+        "in_place",
+        "NULL_empty"
+      ],
+      "contract": {
+        "require_in_place": true,
+        "require_invalid_argument_equivalence": false,
+        "require_null_empty_equivalent": true
+      },
+      "transcript_sha256": "9ff9ea709a99cca7593e578bc78a8f1200f3b6ebdcf246e6d75696a606a75116"
+    },
+    "sanitizer": {
+      "passed": true,
+      "message_cases": 512,
+      "tools": [
+        "ASan",
+        "UBSan"
+      ],
+      "not_a_proof": true,
+      "reference_only_leak_suppression": "ReferenceHash",
+      "candidate_leak_detection": "enabled"
+    },
+    "kat": {
+      "KAT_2_12_Pavelor-1024.txt": "c8d1909e7b7388896a17cf8a3391dc0e929b5d45752702a87e5a799f03a9c266",
+      "KAT_2_23_Pavelor-1024.txt": "5ba36e49efe2b9d4b30526a112efab6bf07fd17e1c3bf14efc193da20a7cea08",
+      "KAT_Loop_Pavelor-1024.txt": "f0ccff6379704142f5b60668c3403f639752ca0930c0267d713751d152619760"
+    }
+  }
+}
