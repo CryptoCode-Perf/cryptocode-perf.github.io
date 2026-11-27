@@ -1,0 +1,75 @@
+{
+  "algorithm": "AFS-TrEDM",
+  "version": "1.0.0",
+  "archive": "instances/AFS-TrEDM-1.0.0.zip",
+  "archive_sha256": "45f6e58bb7e42a0d16c960873937b8cbb03ba19e4170b4f7da8bbcc9e9181bf1",
+  "instances": {
+    "AFS-TrEDM-512": {
+      "ref": "18.633",
+      "opt": "5.434",
+      "our": "4.450",
+      "gm": "1.21",
+      "s4": "1.22",
+      "sha": "8f09e3b681795e49"
+    },
+    "AFS-TrEDM-768": {
+      "ref": "40.249",
+      "opt": "11.378",
+      "our": "9.277",
+      "gm": "1.21",
+      "s4": "1.23",
+      "sha": "0a6b5280739c7ef1"
+    },
+    "AFS-TrEDM-1024": {
+      "ref": "70.794",
+      "opt": "19.341",
+      "our": "16.183",
+      "gm": "1.19",
+      "s4": "1.20",
+      "sha": "eaf4dfd0f466e04f"
+    }
+  },
+  "method": "Elapsed nanoseconds per byte at 1024-byte input; reference-vs-official sampled separately from official-vs-selected. GM is the three-round eight-size geometric mean for official-vs-selected. See ZIP results for raw data.",
+  "previous_website_records": [
+    {
+      "instance": "AFS-TrEDM-1024",
+      "algorithm": "AFS-TrEDM",
+      "id": "hash-01",
+      "digest_bits": "1024",
+      "form": "AVX2 C",
+      "ref": "409.83",
+      "opt": "39.15",
+      "our": "32.73",
+      "s4": "1.20",
+      "gm": "1.20",
+      "sha": "eaf4dfd0f466e04f",
+      "zip": "instances/AFS-TrEDM-1024.zip",
+      "mb": 1.87,
+      "alg": "AFS-TrEDM",
+      "db": "1024",
+      "audit_n": 4
+    },
+    {
+      "instance": "AFS-TrEDM-512",
+      "algorithm": "AFS-TrEDM",
+      "id": "hash-01",
+      "digest_bits": "512",
+      "alg": "AFS-TrEDM",
+      "db": "512",
+      "form": "AVX2 C",
+      "ref": "110.86",
+      "opt": "10.16",
+      "our": "9.65",
+      "s4": "1.05",
+      "gm": "1.05",
+      "sha": "878df3d1ee017a93",
+      "zip": "instances/AFS-TrEDM-512.zip",
+      "mb": 1.68,
+      "audit_n": 3,
+      "metric_basis": "TSC ticks/B",
+      "generation_label": "REF+KAT-only",
+      "provenance_uri": "data/cap/AFS-TrEDM-512.json",
+      "lineage": "own-history continuation"
+    }
+  ]
+}
