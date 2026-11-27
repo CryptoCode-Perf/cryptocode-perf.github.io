@@ -73,7 +73,13 @@
   "pin": "taskset -c 0",
   "rounds": 3,
   "samples_per_size": 101,
-  "harness": "C:/CAP/staging/engine_refkat_no_shared_prune/guide_bench.c"
+  "harness": "C:/CAP/staging/engine_refkat_no_shared_prune/guide_bench.c",
+  "table_unit": "TSC ticks/byte at 1024 B (site table convention)",
+  "table_tsc_1024": {
+   "ref": 14.016,
+   "opt": 7.673,
+   "our": 2.613
+  }
  },
  "baseline": {
   "reference": "input/CryptHash_AlgorithmInstance.c, untouched original",
@@ -120,6 +126,7 @@
  "notes": [
   "official OPT source origin verified against the archive member list (ORIGIN_MANIFEST.json)",
   "same-flags three-variant measured reference, official OPT and candidate inside one guide.run per round",
-  "first run and independent retest both exceed the source-site record; a sibling candidate C03 was rejected because its retest fell below the record"
+  "first run and independent retest both exceed the source-site record; a sibling candidate C03 was rejected because its retest fell below the record",
+  "table columns are TSC ticks/byte at 1024 B (site convention); measurement.rows are ns per byte from the same runs, so every ratio is identical in both units"
  ]
 }
