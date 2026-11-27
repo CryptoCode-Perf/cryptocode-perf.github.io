@@ -1,0 +1,529 @@
+{
+  "instance": "Eijen-768",
+  "task": "eijen768-dsh-gate2-structural-v1",
+  "candidate": "candidate_11",
+  "generation_label": "REF+KAT-only / fresh known-corpus",
+  "source_audit_sha256": "d1aa50f5c19df487f498516ece7a4729440ff3277d3ad029340b13f22a4f5200",
+  "archive_sha256": "7852861c34fee5fa725b75760d6f94fb36a56274c6a2c41d9288f0ebf6e9cba2",
+  "metric_basis": "TSC ticks/B; not hardware core cycles",
+  "hardware_core_cpb": null,
+  "table_metrics_scope": "1024 B pooled TSC over three repetitions; GM is post-hoc geometric mean of three eight-size OPT/candidate wall-time ratios",
+  "eight_length_three_round_opt_over_candidate_geomean": 1.4927464740942573,
+  "historical_opt_over_candidate_1024_geomean": 1.4876687512340059,
+  "site_over_candidate_1024_ratios": [
+    1.2474255157884835,
+    1.3715640279719947,
+    1.1155914362156842
+  ],
+  "site_comparison_scope": "paired standalone shared-library diagnostic; not formal guide standalone OPT score",
+  "legacy_archive": "instances/Eijen-768-legacy-pre-cap.zip",
+  "legacy_archive_sha256": "9793f1e08193fe88cb4d7b899a6fde420f96f38d216d51a1f3de740bfb258b97",
+  "historical_audit": {
+    "passed": true,
+    "task_id": "eijen768-dsh-gate2-structural-v1",
+    "instance": "Eijen-768",
+    "generator_kind": "external_harness",
+    "harness": "DSH-headless",
+    "model": "hy4flash",
+    "calls_reported_by_harness": 175,
+    "selected": "candidate_11",
+    "candidate_audit": [
+      {
+        "candidate": "candidate_01",
+        "status": "validated",
+        "sha256": "7d33ddd66964ac2972da5d6370263b36e591ff248ba6df23ea54df0ab36dfc4b"
+      },
+      {
+        "candidate": "candidate_02",
+        "status": "validated",
+        "sha256": "46f24437f089f35f2b55e844ed5d2450ca4f4f89ffd0f9d02b0202a700892843"
+      },
+      {
+        "candidate": "candidate_03",
+        "status": "screening_rejected",
+        "sha256": "c177ee1c25463b0ce050242cf5b37878e671f0892c8ee7b543e9d859bf898fa3"
+      },
+      {
+        "candidate": "candidate_04",
+        "status": "screening_rejected",
+        "sha256": "06476ffc15947305f42fe333eb96d9dd6ec8c440d947a3a297e6b357bd89b380"
+      },
+      {
+        "candidate": "candidate_05",
+        "status": "validated",
+        "sha256": "2a7fefa46bf0abb95be2fd8a28c5c618216c0810ef5989f1e773ffb0287d490b"
+      },
+      {
+        "candidate": "candidate_06",
+        "status": "validated",
+        "sha256": "36a806ffa0c23b82ce4eb2e69af2132f166155c603cb718bd9ce37ebcbff2e7d"
+      },
+      {
+        "candidate": "candidate_07",
+        "status": "validated",
+        "sha256": "c86152c674f8c633fdedcfdc05c9afdbb4a96aba6e8018300726582d0b2811d7"
+      },
+      {
+        "candidate": "candidate_08",
+        "status": "validated",
+        "sha256": "d04f48642b8d3c52c7b7cf8ecaf91dc7974415237a0596d2ea7b3e765833ecef"
+      },
+      {
+        "candidate": "candidate_09",
+        "status": "validated",
+        "sha256": "106447517b91d69d8a5419c06b3ab6d6ab3217ae6aa5c786f00db4b2f0a3e013"
+      },
+      {
+        "candidate": "candidate_10",
+        "status": "validated",
+        "sha256": "4e2f94450fbd7eb5096cc65a89fc53e5a90087e98ac5eb4ab8f8d1fcda073c13"
+      },
+      {
+        "candidate": "candidate_11",
+        "status": "validated",
+        "sha256": "3bd36bcf8074b9aadd2a02b9026cddc7c7677eb3deaecaaa1cc693275ad25ee7"
+      },
+      {
+        "candidate": "candidate_12",
+        "status": "validated",
+        "sha256": "b03eeaa7de6a65e0e6629598255e82538bed7c7bca51c75a898a545d162b14f9"
+      },
+      {
+        "candidate": "candidate_13",
+        "status": "validated",
+        "sha256": "3baf18d5c2bbb8255f4700f9593e2f121569024cedd878f73d22f9cb53ee41b0"
+      },
+      {
+        "candidate": "candidate_14",
+        "status": "validated",
+        "sha256": "ddeb7166c23d0e076045fe62a9c38d179f57ae33ca4b8ab513e575aae81ee3b8"
+      },
+      {
+        "candidate": "candidate_15",
+        "status": "validated",
+        "sha256": "fd05b345da824d30468c0267289b51adf32f69cb90d52f4b1e50a76484cddac4"
+      },
+      {
+        "candidate": "candidate_16",
+        "status": "validated",
+        "sha256": "c09073ab808a70695eac62850b7eafdef924362cb39afb327a09956ca1ff1a3a"
+      }
+    ],
+    "primary_bytes": 1024,
+    "formal_opt_over_our_1run": 1.5166716736051662,
+    "replication": {
+      "status": "completed",
+      "source_session": "/mnt/c/CAP/lab/runs/eijen768-dsh-gate2-structural-v1",
+      "repetitions": 3,
+      "primary_bytes": 1024,
+      "results": [
+        {
+          "invocation": 1,
+          "primary_mean_speedups": {
+            "reference_o2": 3.5665260809862755,
+            "reference_same": 1.473841240112176,
+            "official_optimized": 1.4538838192776475
+          },
+          "formal_status": "timing_complete_cycles_unavailable"
+        },
+        {
+          "invocation": 2,
+          "primary_mean_speedups": {
+            "reference_same": 1.519434117624174,
+            "official_optimized": 1.505234027024593,
+            "reference_o2": 3.5411388516707687
+          },
+          "formal_status": "timing_complete_cycles_unavailable"
+        },
+        {
+          "invocation": 3,
+          "primary_mean_speedups": {
+            "official_optimized": 1.504475055657467,
+            "reference_o2": 3.532203724355841,
+            "reference_same": 1.4908479336201372
+          },
+          "formal_status": "timing_complete_cycles_unavailable"
+        }
+      ],
+      "summary": {
+        "reference_o2": {
+          "ratios": [
+            3.5665260809862755,
+            3.5411388516707687,
+            3.532203724355841
+          ],
+          "geometric_mean": 3.546593127699328,
+          "minimum": 3.532203724355841,
+          "all_three_above_1_01": true
+        },
+        "reference_same": {
+          "ratios": [
+            1.473841240112176,
+            1.519434117624174,
+            1.4908479336201372
+          ],
+          "geometric_mean": 1.4945896669402086,
+          "minimum": 1.473841240112176,
+          "all_three_above_1_01": true
+        },
+        "official_optimized": {
+          "ratios": [
+            1.4538838192776475,
+            1.505234027024593,
+            1.504475055657467
+          ],
+          "geometric_mean": 1.4876687512340059,
+          "minimum": 1.4538838192776475,
+          "all_three_above_1_01": true
+        }
+      },
+      "claim_limit": "Three exploratory independent invocations in same machine session; not a population confidence interval",
+      "wall_budget": "post-selection evaluator work, common to all arms; outside generation cap",
+      "cycles_limit": "Each invocation reports hardware cycles availability independently; no TSC substitution"
+    },
+    "replication_opt_over_our_geomean": 1.4876687512340059,
+    "replication_all3_over_1_01": true,
+    "formal_status": "timing_complete_cycles_unavailable",
+    "long_kat": "passed",
+    "formal_reports_audited": [
+      "confirmation\\formal\\report.json",
+      "confirmation\\formal\\report.json",
+      "formal\\report.json",
+      "formal\\report.json",
+      "formal\\report.json",
+      "formal\\report.json",
+      "initial_reference_formal\\report.json",
+      "measurements\\candidate_01\\report.json",
+      "measurements\\candidate_01\\report.json",
+      "measurements\\candidate_02\\report.json",
+      "measurements\\candidate_02\\report.json",
+      "measurements\\candidate_05\\report.json",
+      "measurements\\candidate_05\\report.json",
+      "measurements\\candidate_06\\report.json",
+      "measurements\\candidate_06\\report.json",
+      "measurements\\candidate_07\\report.json",
+      "measurements\\candidate_07\\report.json",
+      "measurements\\candidate_08\\report.json",
+      "measurements\\candidate_08\\report.json",
+      "measurements\\candidate_09\\report.json",
+      "measurements\\candidate_09\\report.json",
+      "measurements\\candidate_10\\report.json",
+      "measurements\\candidate_10\\report.json",
+      "measurements\\candidate_11\\report.json",
+      "measurements\\candidate_11\\report.json",
+      "measurements\\candidate_12\\report.json",
+      "measurements\\candidate_12\\report.json",
+      "measurements\\candidate_13\\report.json",
+      "measurements\\candidate_13\\report.json",
+      "measurements\\candidate_14\\report.json",
+      "measurements\\candidate_14\\report.json",
+      "measurements\\candidate_15\\report.json",
+      "measurements\\candidate_15\\report.json",
+      "measurements\\candidate_16\\report.json",
+      "measurements\\candidate_16\\report.json"
+    ],
+    "guide_profile_sha256": "5e1f264ab5e6b3bc2bd08a40010e87fe59471da711e9b79c6f6724a5dafa6899",
+    "trace_sha256": "c63286b5959b63bc6da29f94277cbefa266e174a882c3bcefc5d1a32a7536bbf",
+    "trace_path": "C:\\CAP\\handoff\\active\\eijen768-dsh-gate2-structural-v1\\trace\\interaction_log.md",
+    "tsc_ticks_per_byte_estimate": {
+      "metric": "TSC ticks/byte estimate; not hardware core-cycle CPB",
+      "source_session": "C:\\CAP\\lab\\runs\\eijen768-dsh-gate2-structural-v1",
+      "source_replication": "C:\\CAP\\lab\\runs\\eijen768-dsh-gate2-structural-v1\\independent_replication",
+      "samples_per_variant_size": 303,
+      "rows": [
+        {
+          "variant": "reference_o2",
+          "bytes": 32,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 1294.5021690645412,
+          "tsc_ticks_per_byte": 40.453192783266914,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 128,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 1290.2104669451255,
+          "tsc_ticks_per_byte": 10.079769273008793,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 512,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 5040.466516475864,
+          "tsc_ticks_per_byte": 9.844661164991923,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 1024,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 8730.5704124123,
+          "tsc_ticks_per_byte": 8.525947668371387,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 4096,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 33802.7887917698,
+          "tsc_ticks_per_byte": 8.252633982365674,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 8192,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 66991.92215862211,
+          "tsc_ticks_per_byte": 8.177724872878676,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 16384,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 134228.79708127063,
+          "tsc_ticks_per_byte": 8.192675603104897,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_o2",
+          "bytes": 65536,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 535619.5313531354,
+          "tsc_ticks_per_byte": 8.172905446672598,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 32,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 566.0192254698977,
+          "tsc_ticks_per_byte": 17.688100795934304,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 128,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 554.5679619414686,
+          "tsc_ticks_per_byte": 4.332562202667724,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 512,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 2110.0803375747755,
+          "tsc_ticks_per_byte": 4.121250659325733,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 1024,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 3678.8756478186897,
+          "tsc_ticks_per_byte": 3.592651999822939,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 4096,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 14093.00734839109,
+          "tsc_ticks_per_byte": 3.4406756221657933,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 8192,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 28116.93012582508,
+          "tsc_ticks_per_byte": 3.432242447000132,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 16384,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 56554.29829311056,
+          "tsc_ticks_per_byte": 3.451800432929111,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "reference_same",
+          "bytes": 65536,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 225375.13582920792,
+          "tsc_ticks_per_byte": 3.4389516575501697,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 32,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 371.9029265048086,
+          "tsc_ticks_per_byte": 11.621966453275268,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 128,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 378.8497441357954,
+          "tsc_ticks_per_byte": 2.9597636260609015,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 512,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 1412.579101562495,
+          "tsc_ticks_per_byte": 2.758943557739248,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 1024,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 2461.633873665703,
+          "tsc_ticks_per_byte": 2.403939329751663,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 4096,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 9403.071901428433,
+          "tsc_ticks_per_byte": 2.295671850934676,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 8192,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 18734.982041563533,
+          "tsc_ticks_per_byte": 2.2869851124955485,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 16384,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 37365.17508508663,
+          "tsc_ticks_per_byte": 2.2805892996268695,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "delivered",
+          "bytes": 65536,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 150041.05791047856,
+          "tsc_ticks_per_byte": 2.2894448533703393,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 32,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 559.3264063466765,
+          "tsc_ticks_per_byte": 17.478950198333642,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 128,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 549.4966895981023,
+          "tsc_ticks_per_byte": 4.292942887485174,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 512,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 2102.420846064099,
+          "tsc_ticks_per_byte": 4.106290714968943,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 1024,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 3662.2460599087194,
+          "tsc_ticks_per_byte": 3.576412167879609,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 4096,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 14069.98741749175,
+          "tsc_ticks_per_byte": 3.4350555218485717,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 8192,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 28142.13579053218,
+          "tsc_ticks_per_byte": 3.4353193103676976,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 16384,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 56630.4420379538,
+          "tsc_ticks_per_byte": 3.4564478782930785,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        },
+        {
+          "variant": "official_optimized",
+          "bytes": 65536,
+          "samples": 303,
+          "mean_tsc_ticks_per_operation": 224864.79156353135,
+          "tsc_ticks_per_byte": 3.4311644220509545,
+          "evidence_scope": "3 independent repetitions x 101 samples; arithmetic mean"
+        }
+      ],
+      "raw_csv_sha256": {
+        "independent_replication\\repeat_01\\reference_o2\\raw.csv": "db86d810d1cd9991d2bf431fb03d06ea0b4280bff7e081a353e9b3db1e118b59",
+        "independent_replication\\repeat_02\\reference_o2\\raw.csv": "6c3b03386a53f3d6a52fa0babea21299d0eb668ef4286dfbbc6f2a515ad435fb",
+        "independent_replication\\repeat_03\\reference_o2\\raw.csv": "aa353ead2c07c310b656890dced975a6361df06ddb5f26afc62d91a2d2dfdeba",
+        "independent_replication\\repeat_01\\reference_same\\raw.csv": "f6a4b57006e5ec0d561d6ddc1d8fe2b1c206807c8261094fa69667eec9588159",
+        "independent_replication\\repeat_02\\reference_same\\raw.csv": "2a83dc53301a010c87543dfe6b4c3658ff5fbb0fec4e9710239b836767cf6a8d",
+        "independent_replication\\repeat_03\\reference_same\\raw.csv": "98b0fe7e9873a9eee5f8b3a74d29ef8f3550761b31cb3f815500afce9f37dc36",
+        "independent_replication\\repeat_01\\delivered\\raw.csv": "70f2771597d12ccf849717781df97d43f3c3f0e334b61361543a63dd903533be",
+        "independent_replication\\repeat_02\\delivered\\raw.csv": "fd5131b54ec9670f6adb12cec87e7a5cf649b8ecbe595b97024a34553e0630f5",
+        "independent_replication\\repeat_03\\delivered\\raw.csv": "311c0bbf8b139068f0f74b88b09b35e605188a924590966f48cde5e0e68e586e",
+        "independent_replication\\repeat_01\\official_optimized\\raw.csv": "c4f33631600d4a19d889bf76573a657eeaef09f9a7fa5e1b35f3b90eeab23f79",
+        "independent_replication\\repeat_02\\official_optimized\\raw.csv": "da6efbd620cafb1feedbd4775d4a86cf97d8a5841a20e22e3dabd9dd3b7ef789",
+        "independent_replication\\repeat_03\\official_optimized\\raw.csv": "23a5d9b37239d50b9d80cad5a34318d46adf89168af7413ff0b431da2aa27c2e"
+      },
+      "limitations": [
+        "TSC may be scaled or virtualized",
+        "not PMU core cycles",
+        "not a substitute for CPB acceptance"
+      ]
+    },
+    "our_tsc_ticks_per_byte_1024": 2.403939329751663,
+    "opt_tsc_ticks_per_byte_1024": 3.576412167879609,
+    "our_hardware_core_cycle_cpb_1024": null,
+    "opt_hardware_core_cycle_cpb_1024": null,
+    "scope_limits": [
+      "Harness/model call count is recorded from the external harness trace and operator metadata.",
+      "Prior model exposure is not independently known.",
+      "Constant-time behavior is not assessed.",
+      "Hardware core-cycle CPB is unavailable unless PMU evidence is present."
+    ]
+  },
+  "limits": [
+    "Eight-length score calculated after selection; original frozen primary target was 1024 B.",
+    "Historical comparator run did not include a separate eight-length same-binary A/A; current policy does not require new A/A.",
+    "Website paired comparison has long-tailed samples including 4096 B round 2; all samples retained.",
+    "Model route is client request evidence, not proof of server weights; a historical overlay builder file later changed, while frozen overlay and replay hashes match.",
+    "Known corpus; tests do not prove cryptographic security or constant-time behavior."
+  ]
+}
