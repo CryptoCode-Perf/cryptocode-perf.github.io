@@ -23,3 +23,7 @@ footer{padding:26px 0 0;color:var(--muted);font-size:12px;border-top:1px solid v
 
 /* CAP-PERFORMANCE-WIDE */
 @media(min-width:1200px){.wrap{max-width:1400px}}td.alg{white-space:nowrap}
+
+/* Keep identifiers on the first visible row and shorten separators within groups. */
+#tb tr.group-continuation td.iid,#tb tr.group-continuation td.alg{color:transparent}
+#tb tr.group-open td.iid,#tb tr.group-open td.alg{border-bottom-color:transparent}
