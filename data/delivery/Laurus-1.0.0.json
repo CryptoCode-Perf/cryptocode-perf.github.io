@@ -1,0 +1,46 @@
+{
+  "algorithm": "Laurus",
+  "version": "1.0.0",
+  "candidate_id": "hash-14",
+  "zip": "instances/Laurus-1.0.0.zip",
+  "zip_sha256": "afb8ccf0d7b7a79d8960aa87937d62a6011fe7b1cc7e34aca3dc11b6689de037",
+  "zip_mb": 5.16,
+  "packaging": "CAP layout: Reference_Implementation / Optimized_Implementation / CryptoCode_Implementation per instance, official KAT, test/{vec,speed,kat_check,golden} and build_and_verify.sh",
+  "official_ten_flags": "-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra",
+  "reference_flags": "-std=c99 -Wpedantic -Wall -Wextra -O2",
+  "instances": [
+    {
+      "instance": "Laurus-512",
+      "digest_bits": 512,
+      "gm_ours_vs_official_opt": 1.0502,
+      "prebuilt_sha256": "3674f705b4632453ad6fc0ee60568edd5c1591014a15b2ec635b003c0d1291cc"
+    },
+    {
+      "instance": "Laurus-768",
+      "digest_bits": 768,
+      "gm_ours_vs_official_opt": 1.0715,
+      "prebuilt_sha256": "91001fec9e88e024ae78170b47cfde9cb13fd7ef3d9930f389db8058bc2adf42"
+    },
+    {
+      "instance": "Laurus-1024",
+      "digest_bits": 1024,
+      "gm_ours_vs_official_opt": 1.0644,
+      "prebuilt_sha256": "1a33b2b05021714469f093cdeae58e6dab59389656cf87fc61533b7748d31f8a"
+    }
+  ],
+  "acceptance": {
+    "clean_dir_build_and_verify": "== 验证全部通过 ==",
+    "steps": [
+      "three-way build with the package's own flags",
+      "20 byte-aligned padding-boundary lengths, byte-exact diff vs official reference",
+      "golden vectors frozen from the official reference at packaging time",
+      "513 byte-aligned KAT records (of 4097) x 3 implementations per instance — the official glue passes bit lengths as bytes, so non-byte-aligned lengths are undefined on the official side",
+      "speed measurement (TSC ticks/B, min-of-5, 3 repetitions)"
+    ],
+    "reverified_from_zip": true,
+    "sha256sums_checked": true
+  },
+  "gm_rows": [],
+  "provenance_uri": "https://github.com/CryptoCode-Perf/cryptocode-perf.github.io",
+  "note": "Byte-aligned subset only: official Laurus glue converts bit length with inlen_bits >> 3, so non-byte-aligned messages are outside its domain."
+}
