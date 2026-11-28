@@ -1,0 +1,50 @@
+{
+  "algorithm": "ZC-DMC",
+  "version": "1.0.0",
+  "kind": "algorithm-group CAP package",
+  "zip": "instances/ZC-DMC-1.0.0.zip",
+  "zip_sha256": "ab137cdc6c9116135e9150028dfcd53d9b997732d846fb27499223bd10b2864f",
+  "zip_mb": 10.39,
+  "instances": [
+    {
+      "instance": "ZC-DMC-1536-512",
+      "bits": null,
+      "gm_ours_over_official_opt": null,
+      "sha256_so": null
+    },
+    {
+      "instance": "ZC-DMC-1536-768",
+      "bits": null,
+      "gm_ours_over_official_opt": null,
+      "sha256_so": null
+    },
+    {
+      "instance": "ZC-DMC-1536-1024",
+      "bits": null,
+      "gm_ours_over_official_opt": null,
+      "sha256_so": null
+    },
+    {
+      "instance": "ZC-DMC-1280-512",
+      "bits": null,
+      "gm_ours_over_official_opt": null,
+      "sha256_so": null
+    },
+    {
+      "instance": "ZC-DMC-1280-768",
+      "bits": null,
+      "gm_ours_over_official_opt": null,
+      "sha256_so": null
+    }
+  ],
+  "tiers_in_package_not_on_public_table": [],
+  "packaging": "Reference / Optimized / CryptoCode implemented in separate directories; CryptoCode is built from the shipped JIR-generated assembly + glue by CryptoCode_Implementation/<width>/build.sh.",
+  "acceptance": {
+    "clean_dir_build_and_verify": "RC=0 (see acceptance.log)",
+    "kat_groups": "18 groups x 4097 vectors, all pass",
+    "differential": "test/differential.py passed",
+    "guard": "guard_check passed for every tier"
+  },
+  "flags": "official ten flags (-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra)",
+  "rebuilt_in_clean_dir": true
+}
