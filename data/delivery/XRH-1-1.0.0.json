@@ -1,0 +1,39 @@
+{
+ "algorithm": "XRH-1",
+ "version": "1.0.0",
+ "candidate_id": "hash-28",
+ "zip": "instances/XRH-1-1.0.0.zip",
+ "zip_sha256": "62cd0a53221c799fa9f75f311c5520aea0a3449679b7f244cbbe05df472f2aaa",
+ "zip_mb": 3.76,
+ "packaging": "CAP layout: Reference_Implementation / Optimized_Implementation / CryptoCode_Implementation per instance, official KAT, test/{vec,speed,kat_check,golden} and build_and_verify.sh",
+ "official_ten_flags": "-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra",
+ "reference_flags": "-std=c99 -Wpedantic -Wall -Wextra -O2",
+ "instances": [
+  {
+   "instance": "XRH-1-768",
+   "digest_bits": 768,
+   "gm_ours_vs_official_opt": 1.0174,
+   "prebuilt_sha256": "d1903c27de8fb1a8605070f15b7c2ef4bf92557ee543c7e692ec759d41514014"
+  },
+  {
+   "instance": "XRH-1-1024",
+   "digest_bits": 1024,
+   "gm_ours_vs_official_opt": 1.12,
+   "prebuilt_sha256": "c4441e917831f96b0d1a0c9c836f544b56ff8e5851899e5f516730543e848ad7"
+  }
+ ],
+ "acceptance": {
+  "clean_dir_build_and_verify": "== 验证全部通过 ==",
+  "steps": [
+   "three-way build with the package's own flags",
+   "22 padding-boundary lengths, byte-exact diff vs official reference",
+   "golden vectors frozen from the official reference at packaging time",
+   "4097 KAT records x 3 implementations per instance",
+   "speed measurement (TSC ticks/B, min-of-5, 3 repetitions)"
+  ],
+  "reverified_from_zip": true,
+  "sha256sums_checked": true
+ },
+ "gm_rows": [],
+ "provenance_uri": "https://github.com/CryptoCode-Perf/cryptocode-perf.github.io"
+}
