@@ -1,58 +1,51 @@
 {
-  "algorithm": "Mozi",
-  "version": "1.0.0",
-  "candidate_id": null,
-  "zip": "instances/Mozi-1.0.0.zip",
-  "zip_sha256": "78fcd7d030eb65d81c9195b7007cceba2675f59a14fa47a069d34a24c6f4c350",
-  "zip_mb": 6.76,
-  "packaging": "CAP layout: Reference_Implementation / Optimized_Implementation / CryptoCode_Implementation per instance, official KAT, test/{vec,speed,kat_check,golden} and build_and_verify.sh",
-  "official_ten_flags": "-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra",
-  "reference_flags": "-std=c99 -Wpedantic -Wall -Wextra -O2",
-  "instances": [
-    {
-      "instance": "MOZI-384",
-      "digest_bits": 384,
-      "gm_ours_vs_official_opt": 1.3867,
-      "prebuilt_sha256": "f411f6aa432859f6d9c494c2d6603d2d94ee022e375efbc2f0a44c583fd043ae"
-    },
-    {
-      "instance": "MOZI-512",
-      "digest_bits": 512,
-      "gm_ours_vs_official_opt": 1.083,
-      "prebuilt_sha256": "5e369153a6aed316f7a09d2425e3dd6768780c1fe61e048bfe70aa7341a825c0"
-    },
-    {
-      "instance": "MOZI-768",
-      "digest_bits": 768,
-      "gm_ours_vs_official_opt": 1.0316,
-      "prebuilt_sha256": "d6ecb267088a6d84890a499a42e319fc0764ecd75e00ef19f16b0f10cfe67a7e"
-    },
-    {
-      "instance": "MOZI-1024",
-      "digest_bits": 1024,
-      "gm_ours_vs_official_opt": 1.0467,
-      "prebuilt_sha256": "c7a612e622d4ef890b8d80faca6fc5d84cf78c468029dd3a673a87a3f4fbbd5c"
-    }
+ "algorithm": "Mozi",
+ "version": "1.0.0",
+ "candidate_id": null,
+ "zip": "instances/Mozi-1.0.0.zip",
+ "zip_sha256": "b940ff9d9edcffc76da27f912fce5794a2672b8dc0997b678cf92d44238f706e",
+ "zip_mb": 6.76,
+ "packaging": "CAP layout: Reference_Implementation / Optimized_Implementation / CryptoCode_Implementation per instance, official KAT, test/{vec,speed,kat_check,golden} and build_and_verify.sh",
+ "official_ten_flags": "-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra",
+ "reference_flags": "-std=c99 -Wpedantic -Wall -Wextra -O2",
+ "instances": [
+  {
+   "instance": "MOZI-384",
+   "digest_bits": 384,
+   "gm_ours_vs_official_opt": 1.3867,
+   "prebuilt_sha256": "f411f6aa432859f6d9c494c2d6603d2d94ee022e375efbc2f0a44c583fd043ae"
+  },
+  {
+   "instance": "MOZI-512",
+   "digest_bits": 512,
+   "gm_ours_vs_official_opt": 0.9135,
+   "prebuilt_sha256": "5e369153a6aed316f7a09d2425e3dd6768780c1fe61e048bfe70aa7341a825c0"
+  },
+  {
+   "instance": "MOZI-768",
+   "digest_bits": 768,
+   "gm_ours_vs_official_opt": 0.8993,
+   "prebuilt_sha256": "d6ecb267088a6d84890a499a42e319fc0764ecd75e00ef19f16b0f10cfe67a7e"
+  },
+  {
+   "instance": "MOZI-1024",
+   "digest_bits": 1024,
+   "gm_ours_vs_official_opt": 0.9332,
+   "prebuilt_sha256": "c7a612e622d4ef890b8d80faca6fc5d84cf78c468029dd3a673a87a3f4fbbd5c"
+  }
+ ],
+ "acceptance": {
+  "clean_dir_build_and_verify": "== 验证全部通过 ==",
+  "steps": [
+   "three-way build with the package's own flags",
+   "22 padding-boundary lengths, byte-exact diff vs official reference",
+   "golden vectors frozen from the official reference at packaging time",
+   "4097 KAT records x 3 implementations per instance",
+   "speed measurement (TSC ticks/B, min-of-5, 3 repetitions)"
   ],
-  "acceptance": {
-    "clean_dir_build_and_verify": "== 验证全部通过 ==",
-    "steps": [
-      "three-way build with the package's own flags",
-      "22 padding-boundary lengths, byte-exact diff vs official reference",
-      "golden vectors frozen from the official reference at packaging time",
-      "4097 KAT records x 3 implementations per instance",
-      "speed measurement (TSC ticks/B, min-of-5, 3 repetitions)"
-    ],
-    "reverified_from_zip": true,
-    "sha256sums_checked": true
-  },
-  "gm_rows": [],
-  "provenance_uri": "https://github.com/CryptoCode-Perf/cryptocode-perf.github.io",
-  "measured_gm": {
-    "MOZI-384": 1.3867,
-    "MOZI-512": 1.083,
-    "MOZI-768": 1.0316,
-    "MOZI-1024": 1.0467
-  },
-  "note": "MOZI-768 (1.0316) and MOZI-1024 (1.0467) were re-measured in the weak-win audit and are ties by the >=1.05 rule; the row-level gm values on the site still show the earlier figures and will be reconciled in a follow-up pass."
+  "reverified_from_zip": true,
+  "sha256sums_checked": true
+ },
+ "gm_rows": [],
+ "provenance_uri": "https://github.com/CryptoCode-Perf/cryptocode-perf.github.io"
 }
