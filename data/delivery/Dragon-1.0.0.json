@@ -1,0 +1,33 @@
+{
+ "algorithm": "Dragon",
+ "version": "1.0.0",
+ "candidate_id": "hash-07",
+ "zip": "instances/Dragon-1.0.0.zip",
+ "zip_sha256": "08d9f8b3e5c2aaf507ee6ac45a2fe2716a52d4d21406e23c6b2c8b68c2c0cd64",
+ "zip_mb": 3.16,
+ "packaging": "CAP layout: Reference_Implementation / Optimized_Implementation / CryptoCode_Implementation per instance, official KAT, test/{vec,speed,kat_check,golden} and build_and_verify.sh",
+ "official_ten_flags": "-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra",
+ "reference_flags": "-std=c99 -Wpedantic -Wall -Wextra -O2",
+ "instances": [
+  {
+   "instance": "Dragon-512",
+   "digest_bits": 512,
+   "gm_ours_vs_official_opt": 1.0485,
+   "prebuilt_sha256": "06254e335913855be89809130c41f0aed335d3be75cf138bc85622be93189395"
+  }
+ ],
+ "acceptance": {
+  "clean_dir_build_and_verify": "== 验证全部通过 ==",
+  "steps": [
+   "three-way build with the package's own flags",
+   "22 padding-boundary lengths, byte-exact diff vs official reference",
+   "golden vectors frozen from the official reference at packaging time",
+   "4097 KAT records x 3 implementations per instance",
+   "speed measurement (TSC ticks/B, min-of-5, 3 repetitions)"
+  ],
+  "reverified_from_zip": true,
+  "sha256sums_checked": true
+ },
+ "gm_rows": [],
+ "provenance_uri": "https://github.com/CryptoCode-Perf/cryptocode-perf.github.io"
+}
