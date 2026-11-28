@@ -1,0 +1,51 @@
+{
+ "algorithm": "QSH",
+ "version": "1.0.0",
+ "candidate_id": "hash-24",
+ "zip": "instances/QSH-1.0.0.zip",
+ "zip_sha256": "dbcc7d2325ec9e2ba84f821482a988951c87efd89d8553d871a5c88b76193c92",
+ "zip_mb": 5.19,
+ "packaging": "CAP layout: Reference_Implementation / Optimized_Implementation / CryptoCode_Implementation per instance, official KAT, test/{vec,speed,kat_check,golden} and build_and_verify.sh",
+ "official_ten_flags": "-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra",
+ "reference_flags": "-std=c99 -Wpedantic -Wall -Wextra -O2",
+ "instances": [
+  {
+   "instance": "QSH-512",
+   "digest_bits": 512,
+   "gm_ours_vs_official_opt": 1.0881,
+   "prebuilt_sha256": "2593595ca25aa20cea140bf59d64939d220471e8bd98d2a2292133451526ef88"
+  },
+  {
+   "instance": "QSH-768",
+   "digest_bits": 768,
+   "gm_ours_vs_official_opt": 1.0996,
+   "prebuilt_sha256": "2593595ca25aa20cea140bf59d64939d220471e8bd98d2a2292133451526ef88"
+  },
+  {
+   "instance": "QSH-1024",
+   "digest_bits": 1024,
+   "gm_ours_vs_official_opt": 1.098,
+   "prebuilt_sha256": "2593595ca25aa20cea140bf59d64939d220471e8bd98d2a2292133451526ef88"
+  }
+ ],
+ "acceptance": {
+  "clean_dir_build_and_verify": "passed (RC=0)",
+  "steps": [
+   "three-way build with the package's own flags",
+   "22 padding-boundary lengths, byte-exact diff vs official reference",
+   "golden vectors frozen from the official reference at packaging time",
+   "4097 KAT records x 3 implementations per instance",
+   "speed measurement (TSC ticks/B, min-of-5, 3 repetitions)"
+  ],
+  "reverified_from_zip": true,
+  "sha256sums_checked": true
+ },
+ "gm_rows": [
+  "speedup = official_optimized_time / cryptocode_time, per grade S1..S8 (32 B .. 65536 B).",
+  "GM = geometric mean over the eight grades. Win line 1.05, tie band 0.98-1.05",
+  "QSH-512,1.0881",
+  "QSH-768,1.0996",
+  "QSH-1024,1.0980"
+ ],
+ "provenance_uri": "https://github.com/CryptoCode-Perf/cryptocode-perf.github.io"
+}
