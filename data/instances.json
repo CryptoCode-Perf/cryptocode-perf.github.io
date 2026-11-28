@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-24",
- "n": 77,
+ "n": 78,
  "instances": [
   {
    "instance": "AFS-TrEDM-1024",
@@ -1526,6 +1526,25 @@
    "alg": "QSH",
    "db": "768",
    "audit_n": 4
+  },
+  {
+   "instance": "Wish1024",
+   "algorithm": "Wish",
+   "id": "hash-35",
+   "digest_bits": 1024,
+   "form": "<span class=\"zh\">AVX2 打包 + AES-NI（官方配方自带 -maes）</span><span class=\"en\">AVX2 packing + AES-NI (vendor recipe already uses -maes)</span>",
+   "ref": 4955.01,
+   "opt": 3.86,
+   "our": 3.22,
+   "s4": 1.2,
+   "gm": 1.215,
+   "sha": "a9916040fab8572bcd0486d275e029b98e93bbce435fd7eb1f2b46a57d616f0c",
+   "zip": "instances/Wish-1.0.0.zip",
+   "mb": 3.72,
+   "alg": "Wish",
+   "db": 1024,
+   "metric_basis": "cpb",
+   "provenance_uri": "data/delivery/Wish-1.0.0.json"
   }
  ]
 }

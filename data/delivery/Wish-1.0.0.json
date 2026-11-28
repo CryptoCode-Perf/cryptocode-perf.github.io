@@ -1,0 +1,24 @@
+{
+ "algorithm": "Wish",
+ "version": "1.0.0",
+ "candidate_id": "hash-35",
+ "zip": "instances/Wish-1.0.0.zip",
+ "zip_sha256": "9012899e8d508634d6385d197eee3338b2f87f15f907351b9d00981b3d1f55e1",
+ "zip_mb": 3.72,
+ "packaging": "CAP 三套目录（Reference / Optimized / CryptoCode）+ kat + test + results",
+ "compiler_flags": "-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra （官方侧与官方参考侧都按各自的 recipe 带上 -maes）",
+ "instances": [
+  {
+   "instance": "Wish1024",
+   "digest_bits": 1024,
+   "gm_ours_over_official_opt": 1.215,
+   "verdict": "win",
+   "sha256_so": "a9916040fab8572bcd0486d275e029b98e93bbce435fd7eb1f2b46a57d616f0c"
+  }
+ ],
+ "acceptance": {
+  "clean_dir_build_and_verify": "RC=0，三方 KAT 各 4097/4097 PASS，22 个长度逐字节一致，末行“== 验证全部通过 ==”",
+  "zip_reextract": "解压后 sha256sum -c SHA256SUMS 全对，重跑 build_and_verify.sh RC=0",
+  "isa": "未含超出 AVX2 的指令（AES-NI 属官方 recipe 自带，已在 README 声明为例外）"
+ }
+}
