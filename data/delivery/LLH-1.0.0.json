@@ -1,25 +1,28 @@
 {
- "algorithm": "LLH",
- "version": "1.0.0",
- "candidate_id": "hash-16",
- "zip": "instances/LLH-1.0.0.zip",
- "zip_sha256": "8800d89994839170fd3347126fb2298c7e78fd6beae64623c6bbf6c1bee8cf09",
- "zip_mb": 3.46,
- "packaging": "CAP layout: Reference_/Optimized_/CryptoCode_Implementation + kat + test + results",
- "acceptance": "clean-dir rebuild of the extracted zip: 3 implementations compiled; 22-boundary digest diff ref==opt==ours; golden vectors (frozen from official reference) match; KAT 4097/4097 for each of 2 tiers x 3 implementations; speed harness ran 3 reps; sha256sum -c SHA256SUMS OK; script exit 0",
- "official_ten_flags": "-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra",
- "instances": [
-  {
-   "instance": "LLH-512",
-   "digest_bits": 512,
-   "speedup_gm_ours_vs_official_opt": 1.0583,
-   "prebuilt_sha256": "20df07ed42001589d78971bf1e56b40d2a3b436c9b7286547e72fe70ae5d55c5"
-  },
-  {
-   "instance": "LLH-1024",
-   "digest_bits": 1024,
-   "speedup_gm_ours_vs_official_opt": 1.187,
-   "prebuilt_sha256": "559aefde90f22d29bf4c50dd5fcb15d3dccb3678e3dfb510ad949587ab08b544"
+  "algorithm": "LLH",
+  "version": "1.0.0",
+  "candidate_id": "hash-16",
+  "zip": "instances/LLH-1.0.0.zip",
+  "zip_sha256": "bb67789d8333f5addd6793bda1cad9739ad8685eff60840e7d39e205fcedf032",
+  "zip_mb": 3.46,
+  "packaging": "CAP layout: Reference_/Optimized_/CryptoCode_Implementation + kat + test + results",
+  "acceptance": "clean-dir rebuild of the extracted zip: 3 implementations compiled; 22-boundary digest diff ref==opt==ours; golden vectors (frozen from official reference) match; KAT 4097/4097 for each of 2 tiers x 3 implementations; speed harness ran 3 reps; sha256sum -c SHA256SUMS OK; script exit 0",
+  "official_ten_flags": "-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra",
+  "instances": [
+    {
+      "instance": "LLH-512",
+      "digest_bits": 512,
+      "speedup_gm_ours_vs_official_opt": 1.0583,
+      "prebuilt_sha256": "20df07ed42001589d78971bf1e56b40d2a3b436c9b7286547e72fe70ae5d55c5"
+    },
+    {
+      "instance": "LLH-1024",
+      "digest_bits": 1024,
+      "speedup_gm_ours_vs_official_opt": 1.187,
+      "prebuilt_sha256": "559aefde90f22d29bf4c50dd5fcb15d3dccb3678e3dfb510ad949587ab08b544"
+    }
+  ],
+  "documentation": {
+    "LLH_INSTANCES.md": "bilingual per-instance optimization notes, inside the package"
   }
- ]
 }

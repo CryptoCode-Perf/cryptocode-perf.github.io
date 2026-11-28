@@ -1,31 +1,34 @@
 {
- "algorithm": "Neulaser",
- "version": "1.0.0",
- "candidate_id": "hash-21",
- "zip": "instances/Neulaser-1.0.0.zip",
- "zip_sha256": "8aea34c14cc5497d8ae8a982d2bcdfbfaf288da5bd543b033215fe3b7f9b329e",
- "zip_mb": 5.21,
- "packaging": "CAP layout: Reference_/Optimized_/CryptoCode_Implementation + kat + test + results",
- "acceptance": "clean-dir rebuild of the extracted zip; see results/acceptance.log: three implementations compiled; 22-boundary digest diff ref==opt==ours; golden vectors match; KAT 4097/4097 per tier per implementation; speed harness ran; sha256sum -c SHA256SUMS OK; script exit 0",
- "official_ten_flags": "-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra",
- "instances": [
-  {
-   "instance": "Neulaser-512",
-   "digest_bits": 512,
-   "speedup_gm_ours_vs_official_opt": 1.2902,
-   "prebuilt_sha256": "52f0853f791562ae98fb40bbbe96357928384ee0837c682af97634596f9663b8"
-  },
-  {
-   "instance": "Neulaser-768",
-   "digest_bits": 768,
-   "speedup_gm_ours_vs_official_opt": 1.1195,
-   "prebuilt_sha256": "1e9134b64e9e4dda60c6b5732c0226968cb5bd87d7d3579a31930d0503554756"
-  },
-  {
-   "instance": "Neulaser-1024",
-   "digest_bits": 1024,
-   "speedup_gm_ours_vs_official_opt": 1.2522,
-   "prebuilt_sha256": "a9fee0402edcdb65cd871aa461876010b58c2193e177af893ee6fe14c06404a4"
+  "algorithm": "Neulaser",
+  "version": "1.0.0",
+  "candidate_id": "hash-21",
+  "zip": "instances/Neulaser-1.0.0.zip",
+  "zip_sha256": "adad876473f78a5721df7034a08e8125ffbd9e7a41b1d4f42cf72dbf689b985d",
+  "zip_mb": 5.21,
+  "packaging": "CAP layout: Reference_/Optimized_/CryptoCode_Implementation + kat + test + results",
+  "acceptance": "clean-dir rebuild of the extracted zip; see results/acceptance.log: three implementations compiled; 22-boundary digest diff ref==opt==ours; golden vectors match; KAT 4097/4097 per tier per implementation; speed harness ran; sha256sum -c SHA256SUMS OK; script exit 0",
+  "official_ten_flags": "-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra",
+  "instances": [
+    {
+      "instance": "Neulaser-512",
+      "digest_bits": 512,
+      "speedup_gm_ours_vs_official_opt": 1.2902,
+      "prebuilt_sha256": "52f0853f791562ae98fb40bbbe96357928384ee0837c682af97634596f9663b8"
+    },
+    {
+      "instance": "Neulaser-768",
+      "digest_bits": 768,
+      "speedup_gm_ours_vs_official_opt": 1.1195,
+      "prebuilt_sha256": "1e9134b64e9e4dda60c6b5732c0226968cb5bd87d7d3579a31930d0503554756"
+    },
+    {
+      "instance": "Neulaser-1024",
+      "digest_bits": 1024,
+      "speedup_gm_ours_vs_official_opt": 1.2522,
+      "prebuilt_sha256": "a9fee0402edcdb65cd871aa461876010b58c2193e177af893ee6fe14c06404a4"
+    }
+  ],
+  "documentation": {
+    "Neulaser_INSTANCES.md": "bilingual per-instance optimization notes, inside the package"
   }
- ]
 }
