@@ -1,0 +1,49 @@
+{
+ "algorithm": "MoFang",
+ "version": "1.0.0",
+ "candidate_id": "hash-19",
+ "zip": "instances/MoFang-1.0.0.zip",
+ "zip_sha256": "8c07efef5611676308d4ccd3e627d1bca4a351c38ab133cc17e29d14b71777a7",
+ "zip_mb": 9.76,
+ "packaging": "CAP layout: Reference_/Optimized_/CryptoCode_Implementation + kat + test + results",
+ "acceptance": "clean-dir rebuild of the extracted zip; see results/acceptance.log: three implementations compiled; 22-boundary digest diff ref==opt==ours; golden vectors match; KAT 4097/4097 per tier per implementation; speed harness ran; sha256sum -c SHA256SUMS OK; script exit 0",
+ "official_ten_flags": "-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra",
+ "instances": [
+  {
+   "instance": "MoFang-1024",
+   "digest_bits": 1024,
+   "speedup_gm_ours_vs_official_opt": 1.9117,
+   "prebuilt_sha256": "0576cf6525bfc8b9a8074f07b4ce75de800c2613b8c8ffcb71e4b7581b9114d4"
+  },
+  {
+   "instance": "MoFang-768",
+   "digest_bits": 768,
+   "speedup_gm_ours_vs_official_opt": 1.9321,
+   "prebuilt_sha256": "6c2a349fd93037885d93601c7366f6a16b0af98817a8a74a423db7dcf65b48ad"
+  },
+  {
+   "instance": "MoFang-768-XOF",
+   "digest_bits": 768,
+   "speedup_gm_ours_vs_official_opt": 1.8308,
+   "prebuilt_sha256": "ba39b63b533a1ba4742311412171b948db4fb7f873b4095c6b3ae7946269a7e9"
+  },
+  {
+   "instance": "MoFang-512",
+   "digest_bits": 512,
+   "speedup_gm_ours_vs_official_opt": 2.8119,
+   "prebuilt_sha256": "3b5e5a69703c2758a1f5b1f8a18b823548a3ead3011f9109f727742028b8318a"
+  },
+  {
+   "instance": "MoFang-256",
+   "digest_bits": 256,
+   "speedup_gm_ours_vs_official_opt": 2.8069,
+   "prebuilt_sha256": "5e7a0ac4ca2bf1b7ff2df0210ec250ea3beb24f1fdff103b5cb30e94321bb570"
+  },
+  {
+   "instance": "MoFang-256-XOF",
+   "digest_bits": 256,
+   "speedup_gm_ours_vs_official_opt": 2.9943,
+   "prebuilt_sha256": "7fc2d51ac6b834bbe58f4220b050c594c0f3b4cf050b12ebb0aff7f14916a5d2"
+  }
+ ]
+}
