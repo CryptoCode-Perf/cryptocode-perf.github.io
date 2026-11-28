@@ -1,0 +1,50 @@
+{
+  "algorithm": "ZC-DM",
+  "version": "1.0.0",
+  "kind": "algorithm-group CAP package",
+  "zip": "instances/ZC-DM-1.0.0.zip",
+  "zip_sha256": "19aa46153fe4ba6b5b7d40f1b3f5bf7fd91bf7ed4b18a94e7f9987e4cd6d3e76",
+  "zip_mb": 10.36,
+  "instances": [
+    {
+      "instance": "ZC-DM-1536-512",
+      "bits": 512,
+      "gm_ours_over_official_opt": 1.5271,
+      "sha256_so": "8411bf58fbca3300a78dd55b89f8b25ee933cc24b04da632aee4cd45bd776d05"
+    },
+    {
+      "instance": "ZC-DM-1536-768",
+      "bits": 768,
+      "gm_ours_over_official_opt": 1.2675,
+      "sha256_so": "8411bf58fbca3300a78dd55b89f8b25ee933cc24b04da632aee4cd45bd776d05"
+    },
+    {
+      "instance": "ZC-DM-1536-1024",
+      "bits": 1024,
+      "gm_ours_over_official_opt": 1.175,
+      "sha256_so": "8411bf58fbca3300a78dd55b89f8b25ee933cc24b04da632aee4cd45bd776d05"
+    },
+    {
+      "instance": "ZC-DM-1280-512",
+      "bits": 512,
+      "gm_ours_over_official_opt": 1.1446,
+      "sha256_so": "57a4a95c5cd21f5c72ba61ff22e502d5779850d6d5954fe918da96d7c331a211"
+    },
+    {
+      "instance": "ZC-DM-1280-768",
+      "bits": 768,
+      "gm_ours_over_official_opt": 1.0689,
+      "sha256_so": "57a4a95c5cd21f5c72ba61ff22e502d5779850d6d5954fe918da96d7c331a211"
+    }
+  ],
+  "tiers_in_package_not_on_public_table": [],
+  "packaging": "Reference / Optimized / CryptoCode implemented in separate directories; CryptoCode is built from the shipped JIR-generated assembly + glue by CryptoCode_Implementation/<width>/build.sh.",
+  "acceptance": {
+    "clean_dir_build_and_verify": "RC=0 (see acceptance.log)",
+    "kat_groups": "18 groups x 4097 vectors, all pass",
+    "differential": "test/differential.py passed",
+    "guard": "guard_check passed for every tier"
+  },
+  "flags": "official ten flags (-O3 -march=x86-64 -mavx2 -mtune=native -flto -fomit-frame-pointer -std=c99 -Wpedantic -Wall -Wextra)",
+  "rebuilt_in_clean_dir": true
+}
